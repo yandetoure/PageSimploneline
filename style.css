@@ -108,20 +108,24 @@ li{
                         border-radius: 30px;
                         margin-top: 30px;
                     }
-                    h2{
-                        font-weight: bold;
-                        color: rgb(212, 18, 66);
-                    }
+
             .texte{
                         font-family: "Arial", sans-serif; 
                         width: 500px;
                         margin-left: 20%;
                 font-size: 16px;
                 line-height: 1.8;
+                h2{
+                    font-weight: bold;
+                    color: rgb(212, 18, 66);
+                }
             }
             .events{
                 margin-left: 20%;
                 margin-right: 10%;
+                h2{
+                    color: #cf3034;
+                }
             }
             .next-events{
                 display: flex;
@@ -135,6 +139,12 @@ li{
                 border-radius: 5px;
                 padding-left: 40px;
                 margin-right: 18%;
+            }
+            .next-event1 span{
+                color: rgba(255, 255, 255, 0.7);
+            }
+            .next-event2 span{
+                color: rgba(255, 255, 255, 0.7);
             }
             .next-event2{
                 display: flex;
@@ -161,8 +171,7 @@ li{
             }
             .image-container {
                 color: white;
-
-                height: 100%;
+                height: 50%;
                 font-family: Arial, sans-serif;
                 background-image: url('img/35.png'); /* Remplacez avec le chemin de votre image */
                 background-size: cover; /* Ajuste la taille de l'image pour couvrir tout l'élément body */
@@ -180,14 +189,6 @@ li{
                 text-align: center;
                /* Centrer le texte verticalement */
             }
-            h4{
-                font-family: 'Courier New', Courier, monospace;
-                color: white;
-                font-weight: bold;
-                font-size: 70px;
-                padding-left: 160px;
-                padding-top: 70px;
-            }
     .resultat{
         position: absolute;
         display: flex;
@@ -201,23 +202,236 @@ li{
     }
     .info p{
         color: rgba(255, 255, 255, 0.7);
-    
-    }
-    p{
         margin-left: 150px;
         padding-bottom: 90px;
+    
     }
     .contain{
+        height: 700px;
         padding-bottom: 70px;
+        h4{
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            font-weight: bold;
+            font-size: 70px;
+            padding-left: 160px;
+            padding-top: 150px;
+        }
     }
-    
+    .contain p{
+        padding-left: 10%;
+    }
     h1{
         color: white;
         font-size: 40px;
-        padding-left: 150px;
         font-weight: bold;
     }
     .info{
         text-align: center;
         padding-left: 45px;
     }
+    .section-histoire{
+        display: flex;
+        padding-left: 10%;
+    
+    }
+    .image-contenaire{
+        width: 600px;
+        height: 400px;
+        margin-top: 200px;
+        box-shadow: 0px 0px 3px 4px rgba(98, 94, 94, 0.18);
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 50px;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .image-contenaire img{
+    
+        border-bottom: 8px solid #cf3034;
+        width: 100%;
+        height:80%;
+    }
+    .image-contenaire h3{
+        margin-top: 30px;
+        margin-left: -30px;
+        padding-left: 10px;
+        padding-top: 10px;
+        background: #cf3034;
+        color: #ffff;
+        width: 150px;
+        height: 35px;
+        position: absolute;
+        border-radius: 0px 20px 20px 0px;
+        box-shadow: 0px 1px 1px 1px rgba(130, 128, 128, 0.499);
+    
+    }
+    .image-contenaire h2{
+        font-size: 18px;
+        color: #000;
+        padding-left: 10px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+    .image-contenaire span{
+        position: relative;
+        font-size: 18px;
+        color: #ffff;
+        background: #cf3034;
+        width: 100px;
+        height: 30px;
+        margin-left: 400px;
+        margin-top: -80px;
+        padding-top: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .titre-formateurs h1{
+        margin-top: 90px;
+        font-size: 35px;
+        color: #cf3034;
+    }
+    .texte-contenaire{
+        margin-top: 130px;
+    }
+    .texte-contenaire p{
+        margin-top: 50px;
+        margin-left: 35%;
+        font-size: 20px;
+    }
+    .titre-formateurs p{
+        padding-left: 100px;
+    }
+    .ligne{
+        margin-left: 0px;
+        background: black;
+        width:150px;
+        height: 5px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-top: -15px;
+    }
+    .titre-formateurs{
+        color: #cf3034;
+        font-size: 32px;
+        margin-left: 50px;
+        line-height: 1.7;
+    }
+ hr{
+    width: 20px;
+    margin-right: 80%;
+    font-weight: bold;
+ }
+ .equipe h1{
+    margin-left: 5%;
+    color: #cf3034;
+ }
+ .image-equipe{
+    margin-left: 25%;
+    width: 60%;
+    height: 400px;
+ }
+
+ .formateurs{
+    display: flex;
+    margin-left: 100px;
+    
+}
+
+.formateur{
+    padding-top: 40px;
+    display: flex;
+    border-radius: 10px;
+    width: 500px;
+    margin-left: 90px;
+    box-shadow: 1px 1px 8px 13px rgb(240, 239, 239);
+
+}
+.formateur hr{
+    width: 150px;
+    height: 5px;
+}
+.formateurs-texte-content p{
+    margin-right: 16px;
+}
+.formateurs-texte-content{
+    margin-right: 20px;
+    margin-top: 40px;
+    padding-left: 50px;
+}
+.formateurs-texte-content button{
+    margin-bottom: 30px;
+    background: #cf3034;
+    border: 0px;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    color: #ffff;
+    margin-left: 230px;
+}
+.formateur img{
+    margin-left: -20px;
+    margin-top: -60px;
+    padding-bottom: 2px;
+    width: 280px; height: 230px;
+    border-radius: 10px; 
+    box-shadow: 1px 1px 8px 13px rgb(240, 239, 239);
+}
+.formateur .signe{
+    color: #ffff;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 6px;
+    height: 50px;
+    padding-bottom: 8px;
+    border-radius: 0px 0px 20px 20px;
+    margin-left: 430px;
+    margin-top: -60px;
+    position:absolute;
+    background: #cf3034;
+}
+.image-pedago{
+    padding-left: 20%;
+}
+.equipe{
+    display: flex;
+    justify-content: space-evenly;
+}
+.formateur-equipe{
+    width: 320px;
+    height: 380px;
+    margin-top: 200px;
+    box-shadow: 0px 0px 3px 4px rgba(98, 94, 94, 0.18);
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+    border-radius: 0px 0px 20px 20px;
+    display: grid;
+}
+.formateur-equipe p{
+    text-align: left;
+    padding-top: 22px;
+    padding-left: 30px;
+    line-height: 1.5;
+}
+.footer-title h2{
+    text-align: start;
+}
+.footer-title p{
+    text-align: start;
+}
+.formateur-footer{
+    display: flex;
+    padding-left: 3px;
+}
+.formateur-footer img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.footer-title{
+    padding-left: 10px;
+}
