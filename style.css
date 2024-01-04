@@ -159,3 +159,65 @@ li{
                 margin-bottom: 30px;
                 margin-top: -15px;
             }
+            .image-container {
+                color: white;
+
+                height: 100%;
+                font-family: Arial, sans-serif;
+                background-image: url('img/35.png'); /* Remplacez avec le chemin de votre image */
+                background-size: cover; /* Ajuste la taille de l'image pour couvrir tout l'élément body */
+                background-position: center; /* Centre l'image horizontalement */
+                background-repeat: no-repeat; 
+            }
+            .image-container p{
+                padding-bottom: 190px;
+            }
+            .overflay-box {
+                width: 80%;
+                height: 200px;
+    /* Rouge transparent */
+                color: #fff; /* Texte blanc */
+                text-align: center;
+               /* Centrer le texte verticalement */
+            }
+            h4{
+                font-family: 'Courier New', Courier, monospace;
+                color: white;
+                font-weight: bold;
+                font-size: 70px;
+                padding-left: 160px;
+                padding-top: 70px;
+            }
+    .resultat{
+        position: absolute;
+        display: flex;
+        height: 200px;
+        margin-top: -100px;
+        background-color: rgba(215, 19, 67, 0.925); 
+        width: 75%;
+        margin-left: 5%;
+        padding-left: 15%;
+        margin-right: 5%;
+    }
+    .info p{
+        color: rgba(255, 255, 255, 0.7);
+    
+    }
+    p{
+        margin-left: 150px;
+        padding-bottom: 90px;
+    }
+    .contain{
+        padding-bottom: 70px;
+    }
+    
+    h1{
+        color: white;
+        font-size: 40px;
+        padding-left: 150px;
+        font-weight: bold;
+    }
+    .info{
+        text-align: center;
+        padding-left: 45px;
+    }
