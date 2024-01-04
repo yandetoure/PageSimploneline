@@ -1,1 +1,224 @@
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Nunito+Sans:opsz@6..12&family=Nunito:wght@400;600&family=Roboto+Slab:wght@600&display=swap');
+body{
+    margin: 0px;
+    font-family: 'Nunito', sans-serif;
+    
+}
+.toolbar{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255,255,255);
+    padding-left: 50px;
+    padding-right: 0px;
+    padding-top: 1px;
+}
+.toolbar a{
+    margin: 40px;
+}
+.nav-bar{
+    display: flex;
+    margin: 5px;
+    margin-top: 10px;
+    align-items: center;
+    border: 0px;
+
+
+    background-color: rgb(255,255,255);
+
+}
+.button-navbar{
+    display: flex;
+    margin-left: 0px;
+}
+a{
+    margin: 0px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+li{
+    list-style: none;
+}
+.button {
+    border:  0px;
+    margin-left: 50px;
+    background-color: rgb(206,0,51);
+    color: white;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: none; 
+}
+.lang-menu {
+    position: relative;
+    display: inline-block;
+}
+.lang-button {
+    padding: 10px;
+    margin-left: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.arrow-down {
+    border: solid rgb(206,0,51);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.lang-options {
+    position: absolute;
+    top: 100%;
+    display: none;
+    z-index: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+
+}
+git.lang-option {
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.lang-option:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu:hover .lang-options {
+    display: block;
+}
+
+
+    /* code section section-petite-histoire  */
+.section-petite-histoire{
+    width: 900px;
+    margin-left: 0px;
+    background: #f3f3f3;
+    padding: 18%;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+.section-petite-histoire img{
+    width: 80%;
+    height: 100%;
+}
+
+/* Styles pour la section "Valeur" */
+.veleur-content {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+
+.div-un {
+    margin-top: 30px;
+    width: 600px;
+    margin-left: 100px;
+    padding-right: 20px;
+}
+
+.div-un button {
+    margin-top: 50px;
+    width: 137px;
+    height: 41px;
+    font-size: 18px;
+    background-color: #cf3034;
+    border-radius: 50px;
+    border-color: #FAFAFA;
+    color: var(--blanc);
+}
+
+.div-deux {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 10fr;
+    width: 450px;
+    margin-left: 80px;
+}
+
+.valeur {
+    margin-top: 60px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+}
+
+.valeurs .h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-style: bold;
+    color: #cf3034;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.valeurs h1 {
+    font-size: 2.5rem;
+    font-style: bold;
+    color: #cf3034;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.valeurs p {
+    font-variant-numeric: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.chiffre h2 {
+    margin-top: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F6D1DA;
+    margin-right: 30px;
+    margin-left: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.lettre {
+    display: flex;
+    width: 500px;
+    padding: auto;
+}
+
+.Noschiffre {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #cf3034;
+}
+
+.Noschiffre h1 {
+    color: var(--blanc);
+    display: flex;
+    font-style: var(--body-highlight-font-size);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 50px;
+    justify-content: center;
+}
+
+.Noschiffre p {
+    font-family:'JetBrains Mono', monospace;
+    font-size: 1.2rem;
+    color: var(--blanc);
+}
+
+#H1 {
+    display: flex;
+    font-size: 50px;
+    color: #cf3034;
+    justify-content: center;
+}
