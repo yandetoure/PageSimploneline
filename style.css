@@ -130,20 +130,21 @@ li{
                 display: flex;
                 background-color: rgb(206,0,51);
                 height: 120px;
-                width: 40%;
+                width: 30%;
                 color: white;
                 border-radius: 5px;
                 padding-left: 40px;
+                margin-right: 18%;
             }
             .next-event2{
                 display: flex;
                 background-color: rgb(206,0,51);
                 height: 120px;
-                width: 40%;
+                width: 30%;
                 color: white;
                 border-radius: 5px;
                 padding-left: 40px;
-                margin-left: 20px;
+                margin-left: 40px;
             }
             h5{
                 font-size: 16px;
