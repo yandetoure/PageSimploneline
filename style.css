@@ -114,8 +114,47 @@ li{
                     }
             .texte{
                         font-family: "Arial", sans-serif; 
-                        width: 450px;
-                        padding-left: 10%;
+                        width: 500px;
+                        margin-left: 20%;
                 font-size: 16px;
                 line-height: 1.8;
+            }
+            .events{
+                margin-left: 20%;
+                margin-right: 10%;
+            }
+            .next-events{
+                display: flex;
+            }
+            .next-event1{
+                display: flex;
+                background-color: rgb(206,0,51);
+                height: 120px;
+                width: 40%;
+                color: white;
+                border-radius: 5px;
+                padding-left: 40px;
+            }
+            .next-event2{
+                display: flex;
+                background-color: rgb(206,0,51);
+                height: 120px;
+                width: 40%;
+                color: white;
+                border-radius: 5px;
+                padding-left: 40px;
+                margin-left: 20px;
+            }
+            h5{
+                font-size: 16px;
+                color:rgb(206,0,51);
+                margin-left: 79%;
+            }
+            .tire{
+                background: black;
+                width:110px;
+                height: 5px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                margin-top: -15px;
             }
