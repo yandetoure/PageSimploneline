@@ -632,4 +632,100 @@ a:hover {
     background-color: #cf3034;
 }
 
+/* Styles pour la section "Valeur" */
+.valeur-content {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+
+.div-un {
+    margin-top: 30px;
+    width: 377px;
+    margin-left: 100px;
+    padding-right: 20px;
+}
+
+.div-un button {
+    margin-top: 5px;
+    width: 137px;
+    height: 41px;
+    font-size: 18px;
+    background-color: #cf3034;
+    border-radius: 50px;
+    border-color: #FAFAFA;
+    color: #ffffff;
+}
+
+.div-deux {
+    margin-top: -2vh;
+    display: grid;
+    grid-template-columns: 10fr;
+    width: 450px;
+    margin-left: 80px;
+}
+
+
+.valeur {
+    margin-top: 10px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 4fr 4fr;
+}
+
+.valeurs{
+    margin-left: 200px;
+    margin-right: 300px;
+}
+
+.valeurs .h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-style: bold;
+    color: #cf3034;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.valeurs h1 {
+    font-size: 2.5rem;
+    font-style: bold;
+    color: #cf3034;
+}
+
+
+
+.valeurs p {
+    font-variant-numeric: 5px;
+}
+
+.chiffre h2 {
+    margin-top: 25px;
+    padding-top: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F6D1DA;
+    margin-right: 30px;
+    margin-left: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.lettre {
+    display: block;
+    width: 500px;
+    padding: auto;
+}
+.Noschiffre {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #cf3034;
+}
+
+
 
