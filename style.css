@@ -12,67 +12,86 @@ body{
     padding-left: 10px;
     padding-right: 0px;
     padding-top: 1px;
+    height: 96px;
+    margin: 5px;
+    margin-right: 5px;
 }
+/*ajout*/
+.nav-bar .image36{
+    filter: brightness(90%);
+    padding-left: 40px;
+}
+/*ajout*/
 .nav-bar{
     display: flex;
-    margin: 5px;
+    margin: 6px;
     align-items: center;
     background-color: rgb(255,255,255);
 }
 .button-navbar{
     display: flex;
-    border: 0px;
-    margin-left: 10px;
+    /*border: 0px;*/
+    margin-left: 30px;/*s8 la*/
+}
+.toolbar .home1{
+    color:rgb(206,0,51);
 }
 .toolbar a{
-    margin: 50px;
+    margin: 40px;
     text-decoration: none;
     color: #000;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: bold;
+    letter-spacing: -1px;
 }
 .toolbar li{
-    list-style: none;
+    list-style: none;    /*list-style: none;*/
+    /*list-style-type: style positionn;*/
+}
+.button_recherche{
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
 }
 .button{
     border: 0px;
-    margin-left: 50px;
+    margin-left: 10px;
     background-color: rgb(206,0,51);
     color: white;
-    height: 40px;
-    width: 100px;
+    height: 30px;
+    width: 90px;
     font-weight: bold;
-    font-size: 20px;
-    border-radius: 15px;
+    font-size: 14px;
+    border-radius: 20px;
     box-shadow: none; 
+    padding: 6px 13px;
+    padding-top: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
 }
 
         /* Style pour le conteneur du menu déroulant */
 .lang-menu {
     position: relative;
-    display: inline-block;
+    display: flex;
 }
 
         /* Style pour le bouton du menu déroulant */
 .lang-button {
-    padding: 10px;
-    margin-left: 100px;
-    border-radius: 5px;
-    cursor: pointer;
+    font-weight: bold;
 }
 
         /* Style pour la flèche du menu déroulant */
 .arrow-down {
-    border: solid rgb(206,0,51);
-    border-width: 0 2px 2px 0;
     display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
+    padding: 5px;
     transition: transform 0.3s ease-in-out;
+    right: 10px;
+    color: rgb(206,0,51);
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
 }
-
         /* Style pour les options du menu déroulant */
-.lang-options {
+.arrow-down .lang-options {
     position: absolute;
     top: 100%;
     display: none;
@@ -80,14 +99,11 @@ body{
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fff;
-
 }
 
         /* Style pour chaque option du menu déroulant */
-        .lang-option {
+    .lang-option {
     padding: 5px;
-    cursor: pointer;
-    transition: background-color 0.5s ease-in-out;
 }
 
         /* Style pour mettre en surbrillance l'option survolée */
@@ -96,9 +112,16 @@ body{
 }
 
         /* Afficher les options lorsqu'elles sont sélectionnées */
-.lang-menu:hover .lang-options {
+.arrow-down:hover .lang-options {
     display: block;
 }
+.arrow-down:hover .button {
+    display: block;
+}
+.button:hover {
+    color:#000;
+}
+
         .actualite img{
             width: 40%;
             height: 100%;
@@ -313,6 +336,8 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    /*position: relative;
+    width: 100%;*/
 }
 
 .texte-content{
@@ -865,7 +890,7 @@ footer {
 }
 
 a:hover {
-    color: #cf3034;
+    color:#cf3034;
 }
 
 .social1 {
