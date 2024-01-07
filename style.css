@@ -330,30 +330,36 @@ body{
         border-radius: 0px 20px 20px 0px;
         box-shadow: 0px 1px 1px 1px rgba(130, 128, 128, 0.499);
 
-    }.section-header{
-    background-size: cover;
-    background-image:image('Images/26.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    /*position: relative;
-    width: 100%;*/
+    }
+    .banière{
+    position: relative;
+    width: 100%;
+}
+.Image26{
+    filter: brightness(70%);
+    width: 100%;
+    height: 550px;
+    display: block; 
 }
 
 .texte-content{
-
-    padding:200px;
-    padding-top: 150px;
-    padding-bottom: 300px;
-    margin-left: 80px;
+    position: absolute;
+    bottom: 20px; /* Ajuste la position verticale */
+    right: 40%; /* Ajuste la position horizontale*/
+    padding: 20px;
+    border-radius: 10px;
+    
 }
 .texte-content h1{
-    color:#ffff;
+    color:white;
     font-size: 48px;
+    font-weight: bold;
 }
 
 .texte-content  p{
-    color:#ffff;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
 }
 .texte-content button{
     margin-top: 30px;
@@ -364,6 +370,31 @@ body{
     background: #cf3034;
     color: #ffff;
     font-size: 16px;
+}
+.texte-content .button-passage{
+    text-align: center; /* Aligne les boutons au centre horizontalement */
+    padding-top: 0;
+    padding-left: 550px;
+}
+.texte-content .button-rond{
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 5px;
+}
+.texte-content .button-rectangle{
+    width: 50px;
+    height: 10px;
+    background-color: white;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 5px 5px 5px 5px;
 }
 .h1nº1{
     display: flex;
