@@ -161,61 +161,160 @@ body{
 .texte h3{
     font-size: 20px;
 }
-
-
-
-           .events h3 span{
-            font-size: 16px;
-           }
-           .events h3 {
-            font-size: 24px;
-           }
-            .events h2{
-                margin-left: 30px;
-                margin-right: 10px;
-                color: #cf3034;
-                font-size: 42px;
-            }
-
-            .next-events{
-
-    display: flex;
-                margin-left: 80px;
+/*.events h3 span{
+    font-size: 16px;
+}*/
+/*.events h3 {
+    font-size: 35px;
+    font-weight: bold;
+}*/
+.events h1{
+    margin-left: 30px;
+    margin-right: 10px;
+    color: rgb(206,0,51);
+    font-size: 40px;
+    font-weight: bold;
 }
-            .next-event1{
-                display: flex;
-                background-color: rgb(206,0,51);
-                height: 120px;
-                width: 40%;
-                height:180px;
-                color: white;
-                border-radius: 5px;
-                padding-left: 50px;
-                margin-right: 20px;
-            }
-            .next-event1 span{
-                font-size: 16px;
-                color: rgba(255, 255, 255, 0.7);
-            }
-            .next-event2 span{
-                color: rgba(255, 255, 255, 0.7);
-            }
-            .next-event2{
-                display: flex;
-                background-color: rgb(206,0,51);
-               
-                width: 40%;
-                height: 180px;
-                color: white;
-                border-radius: 5px;
-                padding-left: 50px;
-                margin-left: 05px;
-            }
-            h5{
-                font-size: 16px;
-                color:rgb(206,0,51);
-                margin-left: 79%;
-            }
+
+.next-events{
+display: flex;
+margin-left: 80px;
+}
+.next-event1{
+    display: flex;
+    background-color: rgb(206,0,51);
+    width: 40%;
+    height:180px;
+    color: white;
+    border-radius: 5px;
+    padding-left: 60px;
+    margin-right: 30px;
+}
+.date_event1{
+    position:absolute;
+    padding-top: 25px;
+}
+.jour_event1 {
+    display: block;
+    font-weight: bold;
+    font-size:40px ;
+}
+.mois_event1 {
+    display: block;
+    font-size: 16px;
+    opacity: 1;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.contenu_event1{
+    position:absolute;
+    left:220px;
+    padding-top: 10px;
+}
+.contenu_event1 h4{
+    display: block;
+    font-size:18px;
+}
+.contenu_event1 h3{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.barre1{
+    position: absolute;
+    width: 45px;
+    height: 2.5px;
+    background-color: white;
+    top: 35px;
+    left:150px;
+}
+.button-next_event1{
+    display: block;
+    background-color: white;
+    color: rgb(206,0,51);
+    font-size: 16px;
+    border: none; /* Supprimer la bordure */
+    border-radius: 50%; /* Coins arrondis */
+    width: 45px;
+    height: 45px;
+    margin:10px;
+    margin-left: 475px;
+    margin-top: 100px;
+}
+.flèche{
+    font-weight: bold;
+    font-size: 30px;
+    margin:-12px;
+    margin-top: -18px;
+}
+.next-event2{
+    display: flex;
+    background-color: rgb(206,0,51);           
+    width: 40%;
+    height: 180px;
+    color: white;
+    border-radius: 5px;
+    padding-left: 50px;
+    margin-left: 05px;
+}
+.date_event2{
+    position:absolute;
+    padding-top: 25px;
+}
+.jour_event2 {
+    display: block;
+    font-weight: bold;
+    font-size:40px ;
+}
+.mois_event2 {
+    display: block;
+    font-size: 16px;
+    opacity: 1;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.contenu_event2{
+    position:absolute;
+    left:870px;
+    padding-top: 10px;
+}
+.contenu_event2 h4{
+    display: block;
+    font-size:18px;
+}
+.contenu_event2 h3{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+}
+.barre2{
+    position: absolute;
+    width: 45px;
+    height: 2.5px;
+    background-color: white;
+    top: 35px;
+    left:150px;
+}
+.button-next_event2{
+    display: block;
+    background-color: white;
+    color: rgb(206,0,51);
+    font-size: 16px;
+    border: none; /* Supprimer la bordure */
+    border-radius: 50%; /* Coins arrondis */
+    width: 45px;
+    height: 45px;
+    margin:10px;
+    margin-left: 475px;
+    margin-top: 90px;
+}
+h2{
+    font-size: 24px;
+    color:rgb(206,0,51);
+    margin-left: 79%;
+    font-weight: bold;
+}
             .tire{
                 background: black;
                 width:110px;
@@ -565,39 +664,39 @@ body{
         display: flex;
     justify-content: center;
 }
-    .titre-formateurs h1{
+.titre-formateurs h1{
         margin-top: 90px;
         font-size: 35px;
         color: #cf3034;
-    }
-    .texte-contenaire{
+}
+.texte-contenaire{
         margin-top: 40px;
-    }
-    .texte-contenaire p{
-        margin-top: 50px;
-        margin-left: 35%;
-        font-size: 20px;
-    }
-    .titre-formateurs p{
-        padding-left: 100px;
-    }
-    .ligne{
-        margin-left: 0px;
-        background: black;
-        width:150px;
-        height: 5px;
-        border-radius: 10px;
-        margin-bottom: 30px;
-        margin-top: -15px;
-    }
-    .titre-formateurs{
-        margin-top: 190px;
-        color: #cf3034;
-        font-size: 32px;
-        margin-left: 50px;
-        line-height: 1.7;
-    }
- hr{
+}
+.texte-contenaire p{
+    margin-top: 50px;
+    margin-left: 35%;
+    font-size: 20px;
+}
+.titre-formateurs p{
+    padding-left: 100px;
+}
+.ligne{
+    margin-left: 0px;
+    background: black;
+    width:150px;
+    height: 5px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-top: -15px;
+}
+.titre-formateurs{
+    margin-top: 190px;
+    color: #cf3034;
+    font-size: 32px;
+    margin-left: 50px;
+    line-height: 1.7;
+}
+hr{
     width: 20px;
     margin-right: 80%;
     font-weight: bold;
@@ -616,8 +715,6 @@ body{
     margin-top: 100px;
     display: flex;
     margin-left: 100px;
-    
-
 }
 
 .formateur{
