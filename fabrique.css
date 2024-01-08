@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Nunito+Sans:opsz@6..12&family=Nunito:wght@400;600&family=Roboto+Slab:wght@600&display=swap');
+
+
 *, *::before, *::after{
     box-sizing: border-box;
 }
@@ -5,7 +8,7 @@ body {
     font-family: sans-serif;
     font-weight: normal;
     font-style: normal; 
-    font-family: Arial, sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -201,7 +204,7 @@ nav li:last-child a {
     justify-content: center;
     margin-top: 100px;
     padding: 5vh 2vh 2vh 5vh;
-    background-color: #D3D3D3;
+    background-color: #F3F3F3;
     margin-left:150px;
     margin-right: 150px;
 }
@@ -327,6 +330,8 @@ nav li:last-child a {
 }
 .headequipe{
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 #headequipe{
     color: #ce0033;
@@ -350,9 +355,28 @@ nav li:last-child a {
     padding-right: 20px;
     margin-left: 40px;
 }
+.candidatures .bord{
+        background-color: white;
+        /* Ombre avec une couleur blanche */
+        box-shadow: 5px 5px 10px 0px #F3F3F3;
+        text-align: center;
+        border: white 1px solid;
+        border-radius: 10px;
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 40px;
+    }
+
 .image{
     width: 180px;
     border-radius: 200px;
+
+}
+
+.image1{
+    width: 300px;
+    height: 200px;
 
 }
 
@@ -642,7 +666,8 @@ a:hover {
 .div-un {
     margin-top: 30px;
     width: 377px;
-    margin-left: 100px;
+    margin-left: 30%;
+    margin-right: 5%;
     padding-right: 20px;
 }
 
@@ -657,20 +682,41 @@ a:hover {
     color: #ffffff;
 }
 
-.div-deux {
-    margin-top: -2vh;
+.div-deux{
+    margin-top: -10vh;
     display: grid;
     grid-template-columns: 10fr;
     width: 450px;
     margin-left: 80px;
+    margin-right: -10px;
+
+}
+.partie2{
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 450px;
+    margin-left: 80vh;
+    margin-right: -10px;
+
+}
+
+.partie1 {
+    display:flex;
+    justify-content: center;
+    margin-top: -10vh;
+    width: 450px;
+    margin-left: 80vh;
+    margin-right: -10px;
+
 }
 
 
-.valeur {
+.valeur,.candidatures {
     margin-top: 10px;
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: 4fr 4fr;
+    padding-top: 50px;
+    /* display: grid;
+    grid-template-columns: 4fr 4fr; */
 }
 
 .valeurs{
@@ -683,14 +729,14 @@ a:hover {
     justify-content: center;
     font-size: 2.5rem;
     font-style: bold;
-    color: #cf3034;
+    color: #ce0033;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .valeurs h1 {
     font-size: 2.5rem;
     font-style: bold;
-    color: #cf3034;
+    color: #ce0033;
 }
 
 
@@ -701,21 +747,29 @@ a:hover {
 
 .chiffre h2 {
     margin-top: 25px;
-    padding-top: 15px;
+    padding-top: 12px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: #F6D1DA;
     margin-right: 30px;
-    margin-left: 100px;
+    margin-left: 10px;
     display: flex;
     text-align: center;
     justify-content: center;
 }
+.bord{
+    box-shadow: 0px 1px 1px 1px rgba(130, 128, 128, 0.499);
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
 
 .lettre {
     display: block;
-    width: 500px;
+    width: 400px;
     padding: auto;
 }
 .Noschiffre {
@@ -726,6 +780,388 @@ a:hover {
     padding-bottom: 100px;
     background-color: #cf3034;
 }
+/* .image_fleche{
+    width: 20px;
+    margin-left: -15vh;
+    margin-top: 100px;
+} */
+
+
+.numbers{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url("Images/fabrique/Sans\ titre-1.png");
+    height: 200px;
+}
+.headequipe1{
+    text-align: center;
+}
+.numbers p {
+    margin-top: 50px;
+    color: #FAFAFA;
+    font-size: 30px;
+}
+
+#temoignages img{
+    width: 150px;
+    height: 140px;
+    border-radius: 180px;
+
+}
+
+.temoignages{
+    width: 310px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+/* .candidatures{
+    display: flex;
+} */
+
+.partenaires1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30vh;
+    
+}
+
+.partenaires1 img{
+    width: 100px;
+    height: 100px;
+    margin-right: 100px;
+}
+#partenaires2{
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    /* Styles spécifiques pour les écrans jusqu'à 768 pixels de large */
+   /* Styles généraux */
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Section 1 - Barre de navigation */
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+/* Bannière */
+
+.banière {
+    position: relative;
+}
+
+.image26 {
+    width: 100%;
+    height: auto;
+}
+
+.texte_description {
+    position: absolute;
+    top: 20px;
+    bottom: 50px;
+    right: 50px;
+    left: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.button-passage {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.button-rond,
+.button-rectangle {
+    margin: 5px;
+}
+
+/* Petite histoire section */
+
+.petitehistoire {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.texte1,
+.video {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.video img {
+    max-width: 100%;
+    height: auto;
+}
+
+.h4 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Pédagogie section */
+
+.pedagogie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.video,
+.texte2 {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+#apprenant2 {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Voyage section */
+
+.voyage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.texte2,
+.video {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+#apprenant2 {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Équipe section */
+
+.equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+.headequipe{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.Formateur {
+    width: 100%;
+}
+
+.formateur{
+    background-color: white;
+    /* Ombre avec une couleur blanche */
+    box-shadow: 5px 5px 10px 0px white;
+    text-align: center;
+    border: white 1px solid;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+.image{
+    width: 180px;
+    border-radius: 200px;
+
+}
+
+#form1{
+    margin-top: 15px;
+}
 
 
 
+/* Nos valeurs section */
+
+.valeurs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.div-un,.valeur{
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+.div-deux{
+    margin-right: 10vh;
+}
+
+.div-un, .div-deux {
+    margin-bottom: 20px;
+}
+
+.valeur-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* .div-un,
+.div-deux {
+    width: calc(50% - 20px);
+    margin: 10px;
+} */
+
+/* Nos chiffres section */
+
+.numbers{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url("Images/fabrique/Sans\ titre-1.png");
+    height: 200px;
+}
+.headequipe1{
+    text-align: center;
+}
+.numbers p {
+    margin-top: 70px;
+    color: #FAFAFA;
+    font-size: 17px;
+}
+.valeurs h1{
+align-items: center;}
+
+/* dev web */
+
+.image1{
+    width: 180px;
+    height: 120px;
+}
+
+
+#devweb{
+    width: 100%;
+    margin-left: 0;
+}
+
+
+.partenaires1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 10px;
+    
+}
+
+.partenaires1 img{
+    width: 80px;
+    height: 100px;
+    margin-right: 80px;
+}
+#partenaires2{
+    margin-top: 20px;
+}
+
+
+/* témoignages */
+
+
+
+/* Footer */
+
+footer {
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+.carte1 img{
+    width: 100%;
+}
+
+.Newsletter{
+    margin-left: 100Px;
+}
+.Newsletter input{
+    padding-right: 100px;
+}
+
+.carte2,
+.carte3,
+.carte4 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Carte 2 (Voir plus) */
+
+.carte2 a {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 2px;
+}
+
+/* Carte 3 (Coordonnées) */
+
+.carte3 p {
+    margin: 5px 0;
+}
+
+/* Carte 4 (Newsletter) */
+
+.carte4 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copy {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+    }
