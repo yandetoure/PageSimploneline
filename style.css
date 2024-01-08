@@ -102,7 +102,7 @@ body{
 }
 
         /* Style pour chaque option du menu déroulant */
-    .lang-option {
+.lang-option {
     padding: 5px;
 }
 
@@ -121,48 +121,49 @@ body{
 .button:hover {
     color:#000;
 }
+.actualite{
+    background-color: rgb(253,245,247);
+    height: 600px;
+    width: 100%;
+    /*padding-left: 0%;*/
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+/*.actualite img{
+    width: 40%;
+    height: 100%;
+    margin-left: 100px;
+}   height: 420px;
+    width: 100%;*/
+.affiche{
+    /*background-color: rgba(253, 245, 247, 0.897);*/
+    height: 600px;
+    width: 500px;
+    /*background-color: bisque;*/
+    border-radius: 30px;
+    margin-top: 30px;
+   /* margin-left: 20px;*/
+    padding-left: 150px;
+}
+.texte{
+    font-family: 'Nunito', sans-serif;
+    width: 500px;
+    margin-left: 30px;
+    line-height: 1.8;
+    padding-left: 50px;
+}
+.texte h2{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(206,0,51);
+}
+.texte h3{
+    font-size: 20px;
+}
 
-        .actualite img{
-            width: 40%;
-            height: 100%;
-            margin-left: 100px;
-        }
-        .actualite{
-            background-color: rgb(253,245,247);
-                        height: 500px;
-                        width: 100%;
-                        padding-left: 0%;
-                        display: flex;
-            padding-top: 50px;
-            padding-bottom: 60px;
-                    }
-                    .affiche{
-            background-color: rgba(253, 245, 247, 0.897);
-                        height: 420px;
-                        width: 100%;
-                        background-color: bisque;
-                        border-radius: 30px;
-                        margin-top: 30px;
-                        margin-left: 20px;
-                    }
-                    .texte h2{
-                        font-size: 40px;
-                    }
-                    .texte h3{
-                        font-size: 20px;
-                    }
 
-            .texte{
-                font-family: 'Nunito', sans-serif;
-                width: 500px;
-                        margin-left: 30px;
-                font-size: 16px;
-                line-height: 1.8;
-            }
-               .texte h2{
-                    font-weight: bold;
-                    color: rgb(212, 18, 66);
-                }
+
            .events h3 span{
             font-size: 16px;
            }
