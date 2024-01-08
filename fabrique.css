@@ -851,10 +851,20 @@ body {
 /* Section 1 - Barre de navigation */
 
 .section1 {
+    background-color: #ce0033;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    width: auto;
     align-items: center;
     padding: 10px;
+}
+
+
+
+.nav-list {
+    display: flex;
+    flex-direction: column; /* Affiche les éléments en colonne */
+    align-items: center; /* Centre les éléments horizontalement */
 }
 
 .logo img {
@@ -1104,10 +1114,196 @@ align-items: center;}
     margin-top: 20px;
 }
 
+/* .candidatures{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.partie1,.partie2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 150px;
+}
 
 /* témoignages */
 
+/* Styles pour la section "Recrutement" */
+.recrutement {
+    margin-left: 100px;
+    display: flex;
+    /* grid-template-columns: 6fr 6fr; */
+}
 
+.partie-1 img {
+    background-color: #cf3034;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 700px;
+}
+
+.offre {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    display: grid;
+    margin-right: 100px;
+    grid-template-columns: 6fr;
+}
+
+.form1 {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form2 {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form1 input {
+    width: 250px;
+    height: 80px;
+    padding-left: 1;
+    margin-right: 20px;
+    border: solid gray 3px;
+}
+
+.form2 input {
+    width: 250px;
+    height: 80px;
+    margin-right: 20px;
+    border: solid gray 3px;
+}
+
+.iconify-icon {
+    color: #cf3034;
+    margin-left: 300px;
+}
+
+.partie-1{
+    display: flex;
+}
+
+.partie-1 h1 {
+    font-size: 30px;
+    border-top: 3px solid #cf3034;
+    border-bottom: 3px solid #cf3034;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.partie-1 h3 {
+    display: flex;
+    justify-content: right;
+    font-size: 25px !important;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px !important;
+}
+
+.offre-info h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #cf3034;
+}
+
+.offre-info p {
+    font-size: 20px;
+}
+
+.offre-info h4 {
+    color: #cf3034;
+    font-size: 20px;
+}
+
+.partie-1 button {
+    margin-top: 30px;
+    margin-left: 50%;
+    color: var(--blanc);
+    font-size: 20px;
+    background-color: #cf3034;
+    border: 0.1px solid transparent;
+    border-radius: 35px;
+    width: 140px;
+    height: 50px;
+}
+
+.offre-details {
+    margin-top: 130px;
+    margin-left: 60px;
+}
+
+.offre-details p {
+    font-size: 20px;
+}
+
+.partie-2 h1 {
+    margin-top: 50px;
+    font-size: 30px;
+    color: #cf3034;
+}
+
+.partie-2 {
+    margin-left: 50px;
+}
+
+.fichier {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #cf3034;
+}
+
+.partie-2 p {
+    width: 500px;
+    height: 500px;
+    font-size: 18px;
+}
+
+.message textarea {
+    width: 540px;
+    height: 200px;
+    margin-left: 20px;
+    border: solid gray 3px;
+    margin-top: 20px;
+}
+
+.accord {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn {
+    display: flex;
+    margin-left: 20px;
+}
+
+.btn input {
+    width: 200px;
+    height: 50px;
+    border: 0.1px solid transparent;
+    border-radius: 35px;
+    color: #ffffff;
+    font-size: 18px;
+    background-color: #cf3034;
+}
 
 /* Footer */
 
