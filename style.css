@@ -354,42 +354,75 @@ h2{
         padding-left: 15%;
         margin-right: 5%;
     }
-.info h1{
+.infos{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+
+}
+.image35{
+    filter: brightness(40%);
+    width: 100%;
+    height: 90%;
+    display: block;
+}
+.contain{
+    position: absolute;
+    top: 50px; /* Ajuste la position verticale */
+    right: 600px; /* Ajuste la position horizontale*/
+    padding: 20px;
+    border-radius: 10px;
     color: white;
-    padding-left: 0%;
 }
-    .info p{
-        text-align: center;
-        color: rgba(255, 255, 255, 0.7);
-        padding-bottom: 90px;
-
-    
-    }
-    .contain{
-        height: 700px;
-        padding-bottom: 70px;
-    }
-       .contain h4{
-            font-family: 'Courier New', Courier, monospace;
-            color: white;
-            font-weight: bold;
-            font-size: 70px;
-            padding-left: 160px;
-            padding-top: 150px;
+.contain h1{
+    font-size: 100px;
+    font-weight: bold;
+}
+.contain p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.resultat{
+    position: absolute;
+    background-color:rgb(194, 10, 10);
+    width: 85%;
+    height: 40%;
+    display: flex;
+    text-align: center;
+    top: 600px;
+    right:15px;
+    padding: 9px;
+    padding-top: 3px;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+}
+.info1{
+    position: relative;
+    display: inline-block;
+    left: auto;  
+}
+.info2{
+    position: relative;
+    display: inline-block;
+    margin: 0 auto; 
+}
+.info3{
+    position: relative;
+    display: inline-block;
+    right: auto; 
+}
+.info_quantitative{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+.info_qualitative{
+    font-size: 25px;
+    color: white;
+    padding-top: -10px;
 }
 
-    .contain p{
-        padding-left: 10%;
-    }
-   .contain h1{
-        color: white;
-        font-size: 40px;
-        font-weight: bold;
-    }
-    .info{
-        text-align: center;
-        padding-left: 45px;
-    }
     .section-histoire{
     margin-top: 30px;
         display: flex;
