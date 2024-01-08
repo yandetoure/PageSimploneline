@@ -409,9 +409,6 @@ body{
     color: #cf3034;
     font-size: 24px;
 }
-p .icon{
-    width: 10%;
-}
 
 .carde-actualite-content{
     margin-left: 50px;
@@ -422,7 +419,7 @@ p .icon{
     width: 350px;
     margin: 8px;
 }
-.card h2{
+.card h3{
     margin: 0px;
 }
 .card p{
