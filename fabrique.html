@@ -2,151 +2,552 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fabrique.css">
     <title>Fabrique</title>
 </head>
 <body>
-    <nav class="navbar">
-        <img class="logo" src="images/logosimplon.png" alt="logo-simlpon">
-        <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Fabrique</a></li>
-            <li><a href="#">Formation</a></li>
-            <li><a href="#">Partenaires</a></li>
-            <li><a href="#">Resource</a></li>
-            <li><a href="#">A propos</a></li>
-            <li class="contact"><a href="#">Contact</a></li>
-        </ul>
-    </nav>
 
-     <!--section la petite histoire-->
-     <h1>La petite histoire</h1>
-     <div class="section-petite-histoire">
-         <!-- div contenaire du texte -->
-         <div class="texte-contenaire">
-             <h2>Ouverture de la fabrique</h2>
-             <p>Lorem ipsum, dolor sit amet consectetur adipisicing
-                 elit. Maiores laboriosam deleniti, culpa perspiciatis
-                 nemo quos illum? Inventore non totam ea, optio
-                 voluptates eveniet in sequi quasi dolorem
-                 molestiae saepe eaque, enim laudantium corrupti
-                 iure quisquam a amet reprehenderit atque fugiat?
-                 Idolorem molestiae saepe eaque, enim amet
-                 
-                 reprehenderit atque fugiat?
-             </p>
-         </div>
-         <!-- div contenaire image -->
-         <div class="image-contenaire">
-             <span>2017</span>
-             <img src="images/37.png" alt="">
-         </div>
-     </div>
 
-     <!-- section Nos valeurs -->
+    <section class="section1">
+        <a href="#" class="logo">
+        <img src="Images/fabrique/16.png" alt="logo de SIMPLON" >
+        </a>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#" class="home">Accueil</a></li>
+                <li><a href="#">Fabrique</a></li>
+                <li><a href="#">Formations</a></li>
+                <li><a href="#">Partenariats</a></li>
+                <li><a href="#">Espaces</a></li>
+                <li><a href="#">Entités</a></li>
+                <li><a href="#">À propos</a></li>
+                <li class="search-icon" onclick="toggleSearch()">&#128269;</li>
 
-     <section class="valeurs">
-        <h1 class="h1">Nos valeurs</h1>
-        <div class="veleur-content">
-            <div class="div-un">
-                <h1>Respect</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur  adipisicing elit. Maiores laboriosam deleniti, culpa  perspiciatis nemo quos illum? Inventore non totam  ea, optio voluptates eveniet in sequi quasi  dolorem molestiae saepe eaque, enim laudantium  corrupti iure quisquam a amet reprehenderit atque  fugiat?Inventore non totam ea, optio voluptates  eveniet in sequi quasi dolorem molestiae saepe  eaque, enim laudantium corrupti iure quisquam a  amet reprehenderit atque fugiat? iure quisquam a  amet reprehenderit atque fugiat? </p>
-                <button>Voir plus</button>
-            </div>
-            <div class="div-deux">
-                <div class="valeur">
-                    <div class="chiffre"><h2>01</h2></div>
-                    <div class="littre"><h2>Respect</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
+                <li class="dropdown">
+                    <a href="#" >Fr <a class="dropbtn">▼</a></a>
+                    <div class="dropdown-content">
+                        <a href="#">Ang</a>
+                        <a href="#">Esp</a>
+                        <a href="#">Ch</a>
                     </div>
-                    <div class="chiffre"><h2>02</h2></div>
-                    <div class="littre"><h2>Respect</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                    <div class="chiffre"><h2>03</h2></div>
-                    <div class="littre"><h2>Respect</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                    <div class="chiffre"><h2>04</h2></div>
-                    <div class="littre"><h2>Respect</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                </li>
+                <li class="contact"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
     </section>
-
-    <!-- Section recrutement -->
-
-    <h1 id="H1">Recrutement</h1>
-     
-    <section class="recrutement">
-        <div class="partie-1">
-            <img src="images/image-simplon.png" alt="">
-            <div class="offre">
-                <div class="offre-info">
-                    <h2>Offre en cours</h2>
-                    <p>Formateur référent</p>
-                    <h4>Résumé du poste </h4>
-                    <p>uga magnam unde accusamus recusandae! <br>
-                        uga magnam unde a recusa <br>
-                        uga  unde  recusandae! <br>
-                        uga magnam accusamus recusandae! <br>
-                        uga magnam unde accusamus recusa <br>
-                        uga magnam unde  recusandae! <br>
-                        uga magnam unde accusamus recusa <br>
-                        uga magnam unde  recusandae! <br>
-                    </p>
-                </div>
-                <div class="offre-details">
-                    <p><iconify-icon icon="ic:round-work-history" style="color: #ce0033;" width="35" height="35"></iconify-icon> CDD</p>
-                    <p><iconify-icon icon="mdi:timer-sand-full" style="color: #ce0033;" width="35" height="35"></iconify-icon> Plein temps</p>
-                    <p><iconify-icon icon="zondicons:location" style="color: #ce0033;" width="35" height="35"></iconify-icon> Dakar</p>
-                    <p><iconify-icon icon="subway:time-1" style="color: #ce0033;" width="35" height="35"></iconify-icon> XX/XY/ZZ</p>
-                </div>
+    <sectionBanière >
+        <div class="banière">
+            <img class="image26" src="Images/fabrique/26 copy.png" alt="image banniere">
+            <div class="texte_description">
+                Fabrique
+            <!-- <div class="button-passage">
+                <button class="button-rond"></button>
+                <button class="button-rond"></button>
+                <button class="button-rectangle"></button>
+            </div> -->
             </div>
-            <button>Postuler</button>
-            <h1>Formateur référent <iconify-icon class="iconify-icon" icon="gridicons:add"></iconify-icon></h1>
-            <h1>Formateur référent <iconify-icon class="iconify-icon" icon="gridicons:add"></iconify-icon></h1>
+        </div>
+    </sectionBanière>
 
-             <h3>Afficher plus <a href="#"></a><iconify-icon icon="wi:direction-right"></iconify-icon></a></h3>
-            </div>
-        <div class="partie-2">
-            <h1>Pourquoi nous rejoindre ?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, laudantium repudiandae accusantium nemo, exercitationem at minima accusamus aliquam omnis error similique! Eligendi, iste quasi? Similique fuga provident consequatur eum nisi. <br>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, magnam quisquam! Pariatur consectetur quis nostrum dignissimos aliquam nisi expedita quaerat illum, obcaecati iusto maiores excepturi perferendis ullam vitae, officia earum. <br>
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consectetur cupiditate repellat quis porro! Commodi eius, ut non exercitationem quis recusandae ipsa laborum facilis error consequuntur, aliquid, perferendis molestias. Fugit. <br>
-             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero debitis minus minima! Sapiente, voluptas corrupti? Dolor dolore repellat alias suscipit, enim incidunt nostrum eaque quam quod corporis vitae iste accusamus.
+<section class="fabrique">
+        <div class="fabrique1">
+        <h1>La fabrique</h1>
+        <p>
+        Lorspiciatis nemo quos illum?
+        Inventore non totam ea, optio
+        voluptates eveniet in sequi quasi
+        dolorem molestiae saepe eaque, enim
+        laudantium corrupti iure quisquam a
+        amet reprehenderi
+        </p>
+        </div>
+        <div class="fabrique2">
+        <h1>Missions</h1>
+        <p>
+        Lorspiciatis nemo quos illum?
+        Inventore non totam ea, optio
+        voluptates eveniet in sequi quasi
+        dolorem molestiae saepe eaque, enim
+        laudantium corrupti iure quisquam a
+        amet reprehenderi
+    </p>
+</div>
+</section>
+
+    <h1 id="petitehistoire">La Petite Histoire</h1>
+   <section class="petitehistoire">
+        <div class="texte1">
+            <h1>Ouverture de la Fabrique</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing <br>
+                elit. Maiores laboriosam deleniti, culpa perspiciatis <br>
+                nemo quos illum? Inventore non totam ea, optio <br>
+                voluptates eveniet in sequi quasi dolorem <br>
+                molestiae saepe eaque, enim laudantium corrupti <br>
+                iure quisquam a amet reprehenderit atque fugiat? <br>
+                Idolorem molestiae saepe eaque, enim amet <br>
+                reprehenderit atque fugiat?</p>
+        </div>
+        <div class="video">
+            <h4 class="h4">2017</h4>
+            <img src="Images/fabrique/26 copy.png" alt="image apprenant" id="apprenant1">
+                      
+        </div>
+   </section>
+
+   <div class="rafetal">
+    <div class="point" id="point">
+    </div>
+    <div class="point"></div>
+    <div class="trait"></div>
+    </div>
+
+
+    <h1 class="peda">Notre pedagogie</h1>
+    <section class="pedagogie">
+        <div class="video">
+            <img src="Images/fabrique/Capture d’écran (26).png" alt="image apprenant" id="apprenant2">
+                      
+        </div>
+        <div class="texte2">
+            <p><h2>La pédagogie active </h2>
+                Lorem ipsum, dolor sit amet consectetur adipisicing
+                elit. Maiores laboriosam deleniti, culpa perspiciatis
+                nemo quos illum? Inventore non totam ea, optio
+                voluptates eveniet in sequi quasi dolorem
+                molestiae saepe eaque, enim laudantium corrupti
+                iure quisquam a amet reprehenderit atque fugiat?
+                Inventore non totam ea, optio voluptates</p>
+        </div>
+      
+   </section>
+
+   <section class="voyage">
+    <div class="texte2">
+        <p><h3>Voyager au coeur de la fabrique</h3>
+            <b> section animé par seckou sané </b>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+            laboriosam deleniti, culpa perspiciatis nemo quos illum?
+            Inventore non totam ea, optio voluptates eveniet in sequi quasi
+            dolorem molestiae saepe eaque, enim laudantium corrupti iure
+            quisquam a amet reprehenderit atque fugiat?Inventore non totam
+            ea, optio voluptates eveniet in sequi qu
+    </div>
+    <div class="video">
+        <img src="Images/fabrique/téléchargement.jpeg" alt="image apprenant" id="apprenant2">
+                  
+    </div>
+  
+  
+</section>
+
+
+<section class="voyage">
+    <div class="video">
+        <img src="Images/fabrique/téléchargement.jpeg" alt="image apprenant" id="apprenant2">
+                  
+    </div>
+    <div class="texte2">
+        <p><h3>Pourquoi nous rejoindre?</h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+            laboriosam deleniti, culpa perspiciatis nemo quos illum?
+            Inventore non totam ea, optio voluptates eveniet in sequi quasi
+            dolorem molestiae saepe eaque, enim laudantium corrupti iure
+            quisquam a amet reprehenderit atque fugiat?Inventore non totam
+            ea, optio voluptates eveniet in sequi qu
+    </div>
+   
+  
+  
+</section>
+
+<section class="equipe">
+    <div class="headequipe">
+    <h1 id="headequipe">Notre Equipe</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et <br>
+        recusandae quod eveniet sit</p>
+    </div>
+        <div class="Formateur">
+    <div class="formateur">
+        <img src="Images/fabrique/seck.jpeg" alt="photo de Ngor Seck" class="image">
+
+        <h3>Ngoor SECK</h3>
+        <p><b>Formateur</b><br>Fermentum massa justo sit <br>
+            amet risus morbi leo.</p>
+            <p><i class="fa-brands fa-twitter fa-xl" style="color: #ce0033;"></i> 
+                <i class="fa-brands fa-facebook-f fa-xl" style="color: #ce0033;"></i>
+                <i class="fa-brands fa-linkedin fa-xl" style="color: #ce0033;"></i>
             </p>
-            <form action="#" method="#">
-             <div class="form1">
-                <input class="input" type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom"required><br><br>
-                
-                <input class="input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required><br><br>
-             </div>
-             <div class="form2">                   
-                <input class="input type="tel" id="telephone" name="telephone" placeholder="Entrez votre numéro"required><br><br>
-               
-                <input class="input type="email" id="email" name="email" placeholder="Entrez votre mail" required><br><br>
-            </div>
-            <div class="fichier">
-                <input type="file" id="fichier" name="fichier">
+    </div>
 
+    <div class="formateur">
+        <img src="Images/fabrique/kane.jpeg" alt="photo de Samba Kane" class="image">
+        <div class="format1">
+        <h3>Samba Kane</h3>
+        <p><b>Formateur</b><br>Fermentum massa justo sit <br>
+            amet risus morbi leo.</p>
+            <p><i class="fa-brands fa-twitter fa-xl" style="color: #ce0033;"></i> 
+                <i class="fa-brands fa-facebook-f fa-xl" style="color: #ce0033;"></i>
+                <i class="fa-brands fa-linkedin fa-xl" style="color: #ce0033;"></i>
+            </p>
+    </div>
+</div>
+
+    <div class="formateur">
+        <img src="Images/47.png" alt="photo de Seckou Sané" class="image">
+        <div class="format1" id="form1">
+        <h3>Seckou Sané</h3>
+        <p><b>Formateur</b><br>Fermentum massa justo sit <br>
+            amet risus morbi leo.</p>
+            <p><i class="fa-brands fa-twitter fa-xl" style="color: #ce0033;"></i> 
+                <i class="fa-brands fa-facebook-f fa-xl" style="color: #ce0033;"></i>
+                <i class="fa-brands fa-linkedin fa-xl" style="color: #ce0033;"></i>
+            </p>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- section Nos valeurs -->
+
+<section class="valeurs">
+    <h1 class="h1">Nos valeurs</h1>
+
+    <div class="valeur-content">
+        <div class="div-un">
+            <h1>Respect</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur  adipisicing elit. Maiores laboriosam deleniti, culpa  perspiciatis nemo quos illum? Inventore non totam  ea, optio voluptates eveniet in sequi quasi  dolorem molestiae saepe eaque, enim laudantium  corrupti iure quisquam a amet reprehenderit atque  fugiat?Inventore non totam ea, optio voluptates  eveniet in sequi quasi dolorem molestiae saepe  eaque, enim laudantium corrupti iure quisquam a  amet reprehenderit atque fugiat? iure quisquam a  amet reprehenderit atque fugiat? </p>
+            <button>Voir plus</button>
+        </div>
+        <div class="div-deux">
+            <div class="valeur">
+                <div class="bord">
+                <div class="chiffre"><h2>01</h2></div>
+                <div class="lettre"><h2>Respect</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+                </div>
+                <div class="bord">
+                <div class="chiffre">
+                    <h2>02</h2></div>
+                <div class="lettre"><h2>Respect</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
             </div>
-            <div class="message">
-                <textarea id="message" name="message" placeholder="Entrez votre message" rows="4" cols="50"></textarea>
+            <div class="bord">
+                <div class="chiffre"><h2>03</h2></div>
+                <div class="lettre"><h2>Respect</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
             </div>
-            <div class="accord">
-                <input type="checkbox" id="accepter" name="accepter" required>
-                <label for="accepter">J'accepte les termes et conditions</label>
-            </div> 
-            <div class="btn">
-                <input type="submit" value="Rejoindre">
-            </div>   
-            </form>
+            <div class="bord">
+                <div class="chiffre"><h2>04</h2></div>
+                <div class="lettre"><h2>Respect</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<h1 id="headequipe" class="headequipe1">Nos chiffres</h1>
+<section class="numbers">
+    <p><b>385</b> <br>
+    APPRENANT.ES FORME.ES</p>
+    <p><b>90%</b> <br>
+    APPRENANT.ES INSERE.ES
+    </p>
+    <p><b>25</b> <br>
+    NOMBRE DE FORMATEURS
+    </p>
+    <p><b>100</b> <br>
+    PARTENAIRES DE LA FABRIQUE
+    </p>
+</section>
+
+<section class="equipe" id="devweb">
+    <div class="headequipe">
+        <h1 id="headequipe">Ici la fabrique</h1>
+        </div>
+        <div class="Formateur">
+            <div class="formateur">
+                <div class="format1">
+                <h3>Développement Web</h3>
+                <p>Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Maiores
+                    laboriosam deleniti, culpa
+                    perspiciatis nemo quos illum?</p>
+            <img src="Images/fabrique/42.png" alt="photo de apprenant" class="image1">
+
+                  
+            </div>
         </div>
 
+        <div class="formateur">
+            <div class="format1">
+            <h3>Développement Web</h3>
+            <p>Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Maiores
+                laboriosam deleniti, culpa
+                perspiciatis nemo quos illum?</p>
+        <img src="Images/fabrique/42.png" alt="photo de apprenant" class="image1">
+
+              
+        </div>
+    </div>
+
+    <div class="formateur">
+        <div class="format1">
+        <h3>Développement Web</h3>
+        <p>Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Maiores
+            laboriosam deleniti, culpa
+            perspiciatis nemo quos illum?</p>
+    <img src="Images/fabrique/42.png" alt="photo de apprenant" class="image1">
+
+          
+    </div>
+</div>
+</div>
+</section>
+
+<section class="equipe" id="temoignages">
+    <div class="headequipe">
+    <h1 id="headequipe">Ils en parlent</h1>
+    </div>
+        <div class="Formateur">
+            <div class="formateur">
+                <img src="Images/fabrique/3.png" alt="photo de Maimouna Diallo" class="image2">
+                <div class="format1">
+                <h3>Maimouna Diallo</h3>
+                <i class="fa-sharp fa-solid fa-quote-left fa-2xs" style="color: #ce0033;"></i>
+                <p class="temoignages">
+                    Texte contenant du sens <br>
+                    et empeche de se concentrer sur la mise
+                    sur un texte générique 'Du texte.
+                    concentrer sur la mise
+                    sur un texte générique 'Du texte.
+                </p>
+            </div>
+        </div>
+
+    <div class="formateur">
+        <img src="Images/fabrique/8.png" alt="photo de Thierno O. Douf" class="image2">
+        <div class="format1">
+        <h3>Thierno O. Douf</h3>
+        <i class="fa-sharp fa-solid fa-quote-left fa-2xs" style="color: #ce0033;"></i>
+        <p class="temoignages">
+            Texte contenant du sens 
+            et empeche de se concentrer sur la mise
+            sur un texte générique 'Du texte.
+            concentrer sur la mise
+            sur un texte générique 'Du texte.
+        </p>
+    </div>
+</div>
+
+  
+</div>
+</section>
+
+
+<h1 class="headequipe" id="headequipe">Appel à candidature</h1>
+<section class="candidatures">
+    <div class="partie1">
+            <div class="bord">
+            <div class="chiffre"><h2 id="dw">DW</h2></div>
+            <div class="lettre"><h4>Développement Web</h4>
+            <p>Simplon Dakar</p>
+            </div>
+            </div>
+            <div class="bord">
+            <div class="chiffre">
+                <h2 id="rd">RD</h2></div>
+            <div class="lettre"><h4>Referent Digital</h4>
+                <p>Simplon Dakar</p>
+            </div>
+        </div>
+        <div class="bord">
+            <div class="chiffre"><h2 id="sh">SH</h2></div>
+            <div class="lettre"><h4>Sass Woomen hackers</h4>
+                <p>Simplon Dakar</p>
+            </div>
+        </div>
+    </div>
+    <div class="partie2">
+        <div class="bord">
+        <div class="chiffre"><h2 id="dm">DM</h2></div>
+        <div class="lettre"><h4>Développement Mobile</h4>
+        <p>Simplon Dakar</p>
+        </div>
+        </div>
+        <div class="bord">
+        <div class="chiffre">
+            <h2 id="dw">DW</h2></div>
+        <div class="lettre"><h4>Développement Web</h4>
+            <p>Simplon Dakar</p>
+        </div>
+    </div>
+    <div class="bord">
+        <div class="chiffre"><h2 id="cc">CC</h2></div>
+        <div class="lettre"><h4>Chargée Clientèle</h4>
+            <p>Simplon Dakar</p>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<h1 class="headequipe" id="headequipe">Nos Partenaires</h1>
+<section class="partenaire">
+    <div class="partenaires">
+        <div class="partenaires1">
+            <img src="Images/fabrique/ffe.png" alt="ffe">
+            <img src="Images/45.png" alt="société générale">
+            <img src="Images/fabrique/orange.png" alt="orange">
+            <img src="Images/fabrique/aviva.png" alt="aviva">
+            <img src="Images/fabrique/unio.png" alt="union européenne">
+        </div>
+        <div class="partenaires1" id="partenaires2">
+            <img src="Images/fabrique/ffe.png" alt="ffe">
+            <img src="Images/45.png" alt="société générale">
+            <img src="Images/fabrique/orange.png" alt="orange">
+            <img src="Images/fabrique/aviva.png" alt="aviva">
+            <img src="Images/fabrique/unio.png" alt="union européenne">
+        </div>
+    </div>
+</section>
+
+
+ <!-- Section recrutement -->
+
+ <h1 id="H1">Recrutement</h1>
+     
+ <section class="recrutement">
+     <div class="partie-1">
+         <img src="images/image-simplon.png" alt="">
+         <div class="offre">
+             <div class="offre-info">
+                 <h2>Offre en cours</h2>
+                 <p>Formateur référent</p>
+                 <h4>Résumé du poste </h4>
+                 <p>uga magnam unde accusamus recusandae! <br>
+                     uga magnam unde a recusa <br>
+                     uga  unde  recusandae! <br>
+                     uga magnam accusamus recusandae! <br>
+                     uga magnam unde accusamus recusa <br>
+                     uga magnam unde  recusandae! <br>
+                     uga magnam unde accusamus recusa <br>
+                     uga magnam unde  recusandae! <br>
+                 </p>
+             </div>
+             <div class="offre-details">
+                 <p><iconify-icon icon="ic:round-work-history" style="color: #ce0033;" width="35" height="35"></iconify-icon> CDD</p>
+                 <p><iconify-icon icon="mdi:timer-sand-full" style="color: #ce0033;" width="35" height="35"></iconify-icon> Plein temps</p>
+                 <p><iconify-icon icon="zondicons:location" style="color: #ce0033;" width="35" height="35"></iconify-icon> Dakar</p>
+                 <p><iconify-icon icon="subway:time-1" style="color: #ce0033;" width="35" height="35"></iconify-icon> XX/XY/ZZ</p>
+             </div>
+         </div>
+         <button>Postuler</button>
+         <h1>Formateur référent <iconify-icon class="iconify-icon" icon="gridicons:add"></iconify-icon></h1>
+         <h1>Formateur référent <iconify-icon class="iconify-icon" icon="gridicons:add"></iconify-icon></h1>
+
+          <h3>Afficher plus <a href="#"></a><iconify-icon icon="wi:direction-right"></iconify-icon></a></h3>
+         </div>
+     <div class="partie-2">
+         <h1>Pourquoi nous rejoindre ?</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, laudantium repudiandae accusantium nemo, exercitationem at minima accusamus aliquam omnis error similique! Eligendi, iste quasi? Similique fuga provident consequatur eum nisi. <br>
+         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, magnam quisquam! Pariatur consectetur quis nostrum dignissimos aliquam nisi expedita quaerat illum, obcaecati iusto maiores excepturi perferendis ullam vitae, officia earum. <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo consectetur cupiditate repellat quis porro! Commodi eius, ut non exercitationem quis recusandae ipsa laborum facilis error consequuntur, aliquid, perferendis molestias. Fugit. <br>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero debitis minus minima! Sapiente, voluptas corrupti? Dolor dolore repellat alias suscipit, enim incidunt nostrum eaque quam quod corporis vitae iste accusamus.
+         </p>
+         <form action="#" method="#">
+          <div class="form1">
+             <input class="input" type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom"required><br><br>
+             
+             <input class="input type='text'" id="nom" name="nom" placeholder="Entrez votre nom" required><br><br>
+          </div>
+          <div class="form2">                   
+             <input class="input type='tel'" id="telephone" name="telephone" placeholder="Entrez votre numéro"required><br><br>
+            
+             <input class="input type='email'" id="email" name="email" placeholder="Entrez votre mail" required><br><br>
+         </div>
+         <div class="fichier">
+             <input type="file" id="fichier" name="fichier">
+
+         </div>
+         <div class="message">
+             <textarea id="message" name="message" placeholder="Entrez votre message" rows="4" cols="50"></textarea>
+         </div>
+         <div class="accord">
+             <input type="checkbox" id="accepter" name="accepter" required>
+             <label for="accepter">J'accepte les termes et conditions</label>
+         </div> 
+         <div class="btn">
+             <input type="submit" value="Rejoindre">
+         </div>   
+         </form>
+     </div>
+ </section>
+
+<footer>
+    <div class="carte1">
+        <img src="images/logoSimplon.png" alt="">
+        <div class="social1">
+            <a href="#"><img src="images/icone-twitter.svg" alt=""></a>
+            <a href="#"><img src="images/icone_facebook.svg" alt=""></a>
+            <a href="#"><img src="images/icone_linkedin.svg" alt=""></a>
+            <a href="#"><img src="images/icone_youtube.svg" alt=""></a>
+        </div>
+    </div>
+    <div class="carte2">
+       <h1>Voir plus</h1>
+       <a href="#">A propos</a>
+       <a href="#">Notre histoire</a>
+       <a href="#">conditions d'utilisation</a>
+       <a href="#">Politique de confidentialité</a>
+       <a href="#">FAQ</a> 
+    </div>
+    <div class="carte3">
+        <h1>Coordonnées</h1>
+        <p>Cité keur Goor Gui <br>
+        Dakar,Sicap, Liberté 2 <br>
+        SENEGAL
+        </p>
+        <p>simplon@email.com</p>
+        <p>help@simplon.com</p>
+        <p>(221) 77 456 78 90</p>
+        <p>(221) 77 654 32 10</p>
+    </div>
+    <div class="carte4">
+        <h1>Notre Newsletter</h1>
+        <p>Souscrivez-vous á notre <br>
+            Newsletter pour ne manquer <br>
+            aucune de nos activités 
+        </p>
+        <form action="#">
+            <div class="Newsletter">
+                <input class="input" type="email" id="email" name="email" placeholder="Entrez votre mail*">
+                <input type="submit" value="Rejoindre">
+            </div>
+        </form>
+    </div>
+
+</footer>
+<div class="copy">
+    <h4>2021 simplon. All rights reserved.</h4>
+    <h4>Made by Bin_abdallah</h4>
+</div>
+
+ 
+
+
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
 </body>
 </html>

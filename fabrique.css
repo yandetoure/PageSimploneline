@@ -1,165 +1,542 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Nunito+Sans:opsz@6..12&family=Nunito:wght@400;600&family=Roboto+Slab:wght@600&display=swap');
-body{
-    margin: 0px;
-    font-family: 'Nunito', sans-serif;
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-style: normal; 
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.section1{
+    display: flex;
+}
+/* .ban{
+    position: absolute;
+    width: 100%;
+
+} */
+.logo img{
+    display: block;
+    font-size: 24px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-top: 50px;
+    text-decoration: none;
+    height: 50px;
+    width: 150px;
+}
+
+nav {
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 50px 0 0 300px;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+.home{
+    border-bottom: #ee1d48 solid 3px;
+}
+.search-icon{
+    margin: 5px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+nav li a, .dropbtn {
+    font-weight:bold;
+    display: inline-block;
+    color: #101820;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+}
+
+nav li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #101820;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+}
+
+/* .dropdown-content a:hover {
+    background-color: red;
+} */
+.dropdown .dropbtn {
+    color: #ff0000; /* Rouge pour la flèche au survol */
     
 }
 
-/* Styles de la barre de navigation */
-.navbar {
-    font-size: 12px;
-    background-color: #ffffff;
-    padding-left: 0px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.section1 .contact{
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+    border-radius: 15px;
+
+}
+nav li:last-child a {
+    color: white; /* Couleur blanche pour le texte "Contact" */
 }
 
-.navbar img.logo {
-    max-height: 40px;
-}
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+/* body {
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal; 
+} */
+.banière{
+    position: relative;
+    width: 100%;
 }
-
-.navbar li {
-    margin-right: 20px;
+.image26{
+    filter: brightness(70%);
+    width: 100%;
+    height: 600px;
+    display: block;
 }
+.texte_description{
+    position: absolute;
+    bottom:270px; /* Ajuste la position verticale */
+    right: 40%; /* Ajuste la position horizontale*/
+    padding: 2px;
+    border-radius: 10px;
+    color: white;
+    font-size: 65px;
 
-.navbar a {
-    text-decoration: none;
-    color:#000000;
-   font-size: 12px;
-    transition: color 0.3s ease;
 }
-
-.navbar a:hover {
-    color: #cf3034;
+.button-contact{
+    background-color: rgb(194, 10, 10);
+    color: white;
+    padding: 16px 25px; /* Remplissage intérieur du bouton */
+    font-size: 16px;
+    border: none; /* Supprimer la bordure */
+    border-radius: 25px 25px 25px 25px; /* Coins arrondis */
 }
-
-.navbar .contact {
-    background-color:#cf3034;
-    padding: 8px 20px;
-    border-radius: 9px;
+.button-passage{
+    text-align: center; /* Aligne les boutons au centre horizontalement */
+    padding-top: 150px;
+    padding-left: 550px;
 }
-
-.navbar .contact a {
-    color:#ffffff;
-   
-}
-
-/* Styles pour la section "Valeur" */
-.veleur-content {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 6fr 6fr;
-}
-
-.div-un {
-    margin-top: 30px;
-    width: 600px;
-    margin-left: 100px;
-    padding-right: 20px;
-}
-
-.div-un button {
-    margin-top: 50px;
-    width: 137px;
-    height: 41px;
-    font-size: 18px;
-    background-color: #cf3034;
-    border-radius: 50px;
-    border-color: #FAFAFA;
-    color: #ffffff;
-}
-
-.div-deux {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 10fr;
-    width: 450px;
-    margin-left: 80px;
-}
-
-.valeur {
-    margin-top: 60px;
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: 4fr 4fr;
-}
-
-.valeurs .h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 2.5rem;
-    font-style: bold;
-    color: #cf3034;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.valeurs h1 {
-    font-size: 2.5rem;
-    font-style: bold;
-    color: #cf3034;
-}
-
-.valeurs p {
-    font-variant-numeric: 5px;
-}
-
-.chiffre h2 {
-    margin-top: 25px;
-    width: 50px;
-    height: 50px;
+.button-rond{
+    width: 12px;
+    height: 12px;
+    background-color: white;
     border-radius: 50%;
-    background-color: #F6D1DA;
-    margin-right: 30px;
-    margin-left: 100px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 5px;
+}
+.button-rectangle{
+    width: 50px;
+    height: 10px;
+    background-color: white;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.fabrique{
+    color: #F3F3F3;
+    margin-left: 250px;
+    margin-top: -15vh;
+    width: 70%;
+    height: 300px;
+    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ce0033;
+    opacity: 0.65;
+}
+.fabrique1,.fabrique2{
+    width: 25%;
+    margin-left: 100px;
+}
+
+.fabrique1{
+    border-right: #F3F3F3 solid 7px;
+}
+
+.fabrique h1{
+    font-size: 40px;
+}
+
+.point{
+    background-color: #ee1d48;
+    width: 10px;
+    height: 10px;
+    border: #ee1d48 1px solid;
+    border-radius: 15px;
+    margin-top: 299px;
+}
+#point{
+    margin-right: 10px;
+
+}
+.trait{
+    width: 30px;
+    height: 8px;
+    background-color: #ee1d48;
+    border: #ee1d48 1px solid;
+    border-radius: 10Px;
+    margin-top: 299px;
+    margin-left: 10px;
+}
+
+#petitehistoire{
     text-align: center;
+    color: #ee1d48;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+}
+
+.petitehistoire{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 5vh 2vh 2vh 5vh;
+    background-color: #F3F3F3;
+    margin-left:150px;
+    margin-right: 150px;
+}
+.video{
+    margin-top: 60px;
+    margin-left: 150px;
+    height: 300px;
+    width: 500px;
+
+}
+
+.time{
+    height: 20px;
+    width: 60px;
+    color: #FFF;
+    background-color: #ee1d48;
+    transform: translate(-50%, -50%);
+    margin-top: -50px;
+    margin-left: 300px;
+    padding:5px 15px 30px 15px;
+  
+}
+.time h3{
+    margin-top: 6px;
+    margin-left: -3px;
+}
+
+
+#apprenant,#apprenant1{
+    height: 350px;
+}
+#apprenant1{
+    width: 450px;
+
+}
+.h4{
+    font-size: large;
+    position: absolute;
+    background-color: #ee1d48;
+    color: #FFF;
+    width: 100px;
+    height: 50px;
+    padding-left: 42px;
+    padding-right: 72px;
+    padding-top: 15px;
+    margin-left: 48vh;
+    border: #ee1d48 1px solid;
+
+}
+.video p:last-child{
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: larger;
+    border-top: #ee1d48 7px solid;
+}
+
+.texte1{
+    margin-left: 150px;
+    margin-top: 20px;
+    font-size: larger;
+    line-height: 1.5;
+}
+.texte h1,.texte1 h1{
+    color: #ee1d48;
+}
+.rafetal{
+    display: flex;
+    margin-left: 100vh;
+}
+.point{
+    background-color: #ee1d48;
+    width: 2vh;
+    height: 2vh;
+    border: #ee1d48 1px solid;
+    border-radius: 15px;
+    margin-top: -5vh;
+}
+#point{
+    margin-right: 10px;
+
+}
+.trait{
+    width: 30px;
+    height: 10px;
+    background-color: #ee1d48;
+    border: #ee1d48 1px solid;
+    border-radius: 10Px;
+    margin-top: -4.75vh;
+    margin-left: 10px;
+}
+.pedagogie,.voyage{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 10px; */
+    padding: 0 2vh 2vh 5vh;
+    margin-left:10px;
+    margin-right: 150px;
+}
+
+#apprenant2{
+    width: 500px;
+    height: 270px;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.peda{
+    color: #ee1d48;
+    text-align: center;
+}
+.texte2 h2,.texte2 h3{
+    color: #ee1d48;
+}
+.texte2{
+    margin-left: 150px;
+    margin-top: 50px;
+    font-size: larger;
+    line-height: 1.5;
+}
+
+.equipe{
+    background-color: rgb(250, 250, 250);
+
+}
+.headequipe{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#headequipe{
+    color: #ce0033;
+}
+.headequipe b{
+    color: #ce0033;
+}
+.Formateur{
+    display: flex;
     justify-content: center;
 }
+.formateur{
+    background-color: white;
+    /* Ombre avec une couleur blanche */
+    box-shadow: 5px 5px 10px 0px white;
+    text-align: center;
+    border: white 1px solid;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 40px;
+}
+.candidatures .bord{
+        background-color: white;
+        /* Ombre avec une couleur blanche */
+        box-shadow: 5px 5px 10px 0px #F3F3F3;
+        text-align: center;
+        border: white 1px solid;
+        border-radius: 10px;
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 40px;
+    }
 
-.lettre {
-    display: flex;
-    width: 500px;
-    padding: auto;
+.image{
+    width: 180px;
+    border-radius: 200px;
+
 }
 
-.Noschiffre {
+.image1{
+    width: 300px;
+    height: 200px;
+
+}
+
+#form1{
+    margin-top: 15px;
+}
+
+
+.footer-title h2{
+    text-align: start;
+}
+.footer-title p{
+    text-align: start;
+}
+.formateur-footer{
     display: flex;
-    justify-content: space-around;
+    padding-left: 3px;
+}
+.formateur-footer img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.footer-title{
+    padding-left: 10px;
+}
+.section-histoire{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.image-contenaire{
+    width: 1200px;
+    height: 600px;
+    margin-top: 80px;
+    box-shadow: 0px 0px 3px 4px rgba(98, 94, 94, 0.18);
+    margin-left: 80px;
+    margin-right: 80px;
     margin-bottom: 50px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #cf3034;
+    border-radius: 0px 0px 20px 20px;
 }
+.image-contenaire img{
 
-/* Styles pour la section "Recrutement" */
-.recrutement {
-    margin-left: 100px;
-    display: grid;
-    grid-template-columns: 6fr 6fr;
+    border-bottom: 8px solid #cf3034;
+    width: 100%;
+    height:80%;
 }
+.image-contenaire h3{
+    margin-top: 30px;
+    margin-left: -40px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background: #cf3034;
+    color: #ffff;
+    width: 300px;
+    height: 35px;
+    position: absolute;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 0px 1px 1px 1px rgba(130, 128, 128, 0.499);
 
-.partie-1 img {
-    background-color: #cf3034;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 700px;
 }
-
-.offre {
+.info  span{
+    margin: 20px;
+    font-size: 14px;
+    text-align: center;
+    color: #ccc;
+}
+.image-contenaire span{
+    position: relative;
+    font-size: 18px;
+    color: #ffff;
+    background: #cf3034;
+    width: 100px;
+    height: 30px;
+    margin-left: 400px;
+    margin-top: -80px;
+    padding-top: 10px;
+    border-radius: 10px;
     display: flex;
+    font-style: var(--body-highlight-font-size);
+    font-family: 'JetBrains Mono', monospace;
+    
+    justify-content: center;
 }
+.image-contenaire h2{
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+.Noschiffre p {
+    font-family:'JetBrains Mono', monospace;
+    font-size: 1.2rem;
+    color: #ffff;
+}
+.texte-contenaire .titre-formateurs{
+    margin-top: 0px;
+    font-size: 20px;
+}
+.texte-contenaire{
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.texte-contenaire p{
 
+    margin: 20px;
+    font-size: 18px;
+}
+/* code formulaire */
+
+.nous-contacter{
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.localisation img{
+    width: 35px;
+}
+.localisation span{
+    font-size: 28px;
+    margin-left: 12px;
+}
+.localisation p{
+    color: darkgrey;
+    font-size: 14px;
+    margin-left: 50px;
+}
+.message textarea {
+    width: 625px;
+    height: 200px;
+    margin-left: 20px;
+    border: 0px;
+    box-shadow: 0px 1px 1px 1px rgba(130, 128, 128, 0.499);
+
+    margin-top: 20px;
+}
 form {
     display: grid;
     margin-right: 100px;
@@ -167,6 +544,7 @@ form {
 }
 
 .form1 {
+
     margin-top: 30px;
     margin-left: 20px;
     display: flex;
@@ -181,112 +559,23 @@ form {
 }
 
 .form1 input {
-    width: 250px;
-    height: 80px;
+    width: 300px;
+    height: 50px;
     padding-left: 1;
     margin-right: 20px;
-    border: solid gray 3px;
+    border: solid  0px;
+    box-shadow: 0px 1px 1px 1px rgba(130, 128, 128, 0.499);
+
 }
 
 .form2 input {
-    width: 250px;
-    height: 80px;
-    margin-right: 20px;
-    border: solid gray 3px;
-}
-
-.iconify-icon {
-    color: #cf3034;
-    margin-left: 300px;
-}
-
-.partie-1 h1 {
-    font-size: 30px;
-    border-top: 3px solid #cf3034;
-    border-bottom: 3px solid #cf3034;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.partie-1 h3 {
-    display: flex;
-    justify-content: right;
-    font-size: 25px !important;
-}
-
-a {
-    text-decoration: none;
-    font-size: 25px !important;
-}
-
-.offre-info h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    color: #cf3034;
-}
-
-.offre-info p {
-    font-size: 20px;
-}
-
-.offre-info h4 {
-    color: #cf3034;
-    font-size: 20px;
-}
-
-.partie-1 button {
-    margin-top: 30px;
-    margin-left: 50%;
-    color: var(--blanc);
-    font-size: 20px;
-    background-color: #cf3034;
-    border: 0.1px solid transparent;
-    border-radius: 35px;
-    width: 140px;
+    width: 300px;
     height: 50px;
-}
+    margin-right: 20px;
+    border: 0px;
+    box-shadow: 0px 1px 1px 1px rgba(130, 128, 128, 0.499);
 
-.offre-details {
-    margin-top: 130px;
-    margin-left: 60px;
 }
-
-.offre-details p {
-    font-size: 20px;
-}
-
-.partie-2 h1 {
-    margin-top: 50px;
-    font-size: 30px;
-    color: #cf3034;
-}
-
-.partie-2 {
-    margin-left: 50px;
-}
-
-.fichier {
-    display: flex;
-    justify-content: right;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    color: #cf3034;
-}
-
-.partie-2 p {
-    width: 500px;
-    height: 500px;
-    font-size: 18px;
-}
-
-.message textarea {
-    width: 540px;
-    height: 200px;
-    margin-left: 20px;
-    border: solid gray 3px;
-    margin-top: 20px;
-}
-
 .accord {
     display: flex;
     justify-content: left;
@@ -307,24 +596,1468 @@ a {
     height: 50px;
     border: 0.1px solid transparent;
     border-radius: 35px;
-    color: #ffffff;
+    color: #ffff;
     font-size: 18px;
     background-color: #cf3034;
 }
 
-/* section-petite-histoire */
+/* code footer */
 
-.section-petite-histoire{
+footer {
+    font-family: 'Nunito Sans', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    background-color:#000;
+    color: #ffff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.carte2 {
+    display: grid;
+}
+
+.carte1 {
+    display: grid;
+}
+
+.carte2 a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+a:hover {
+    color: #cf3034;
+}
+
+.social1 {
     display: flex;
     justify-content: space-evenly;
 }
-.section-petite-histoire .texte-contenaire{
+.social1 img{
+    margin: 10px;
+}
+
+.carte3 p {
+    font-size: 20px;
+}
+
+.carte4 p {
+    font-size: 20px;
+}
+
+.Newsletter {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.Newsletter .input {
+    background-color: #ffff;
+    border-radius: 15px 0px 0px 15px;
+    margin-right: 0px;
+    padding-right: 8px;
+    width: 200px;
+    height: 50px;
+}
+
+.Newsletter input {
+    font-size: 18px;
+    color: #ffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid 1px transparent;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #cf3034;
+    width: 100px;
+    height: 50px;
+}
+
+.copy {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    background-color: #cf3034;
+}
+
+/* Styles pour la section "Valeur" */
+.valeur-content {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+}
+
+.div-un {
+    margin-top: 30px;
+    width: 377px;
+    margin-left: 30%;
+    margin-right: 5%;
+    padding-right: 20px;
+}
+
+.div-un button {
+    margin-top: 5px;
+    width: 137px;
+    height: 41px;
+    font-size: 18px;
+    background-color: #cf3034;
+    border-radius: 50px;
+    border-color: #FAFAFA;
+    color: #ffffff;
+}
+
+.div-deux{
+    margin-top: -10vh;
+    display: grid;
+    grid-template-columns: 10fr;
     width: 450px;
+    margin-left: 80px;
+    margin-right: -10px;
+
+}
+.partie2{
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 450px;
+    margin-left: 80vh;
+    margin-right: -10px;
+
 }
 
-/* image de la section image-contenaire */
+.partie1 {
+    display:flex;
+    justify-content: center;
+    margin-top: -10vh;
+    width: 450px;
+    margin-left: 80vh;
+    margin-right: -10px;
 
-.image-contenaire img{
+}
+
+
+.valeur,.candidatures {
+    margin-top: 10px;
+    padding-top: 50px;
+    /* display: grid;
+    grid-template-columns: 4fr 4fr; */
+}
+
+.valeurs{
+    margin-left: 200px;
+    margin-right: 300px;
+}
+
+.valeurs .h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-style: bold;
+    color: #ce0033;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.valeurs h1 {
+    font-size: 2.5rem;
+    font-style: bold;
+    color: #ce0033;
+}
+
+
+
+.valeurs p {
+    font-variant-numeric: 5px;
+}
+
+.chiffre h2 {
+    margin-top: 25px;
+    padding-top: 12px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F6D1DA;
+    margin-right: 30px;
+    margin-left: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.bord{
+    box-shadow: 0px 1px 1px 1px rgba(130, 128, 128, 0.499);
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.lettre {
+    display: block;
+    width: 400px;
+    padding: auto;
+}
+.Noschiffre {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #cf3034;
+}
+/* .image_fleche{
+    width: 20px;
+    margin-left: -15vh;
+    margin-top: 100px;
+} */
+
+
+.numbers{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url("Images/fabrique/Sans\ titre-1.png");
+    height: 200px;
+}
+.headequipe1{
+    text-align: center;
+}
+.numbers p {
+    margin-top: 50px;
+    color: #FAFAFA;
+    font-size: 30px;
+}
+
+#temoignages img{
+    width: 150px;
+    height: 140px;
+    border-radius: 180px;
+
+}
+
+.temoignages{
+    width: 310px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+/* .candidatures{
+    display: flex;
+} */
+
+.partenaires1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30vh;
+    
+}
+
+.partenaires1 img{
+    width: 100px;
+    height: 100px;
+    margin-right: 100px;
+}
+#partenaires2{
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    /* Styles spécifiques pour les écrans jusqu'à 768 pixels de large */
+   /* Styles généraux */
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Section 1 - Barre de navigation */
+
+.section1 {
+    background-color: #ce0033;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.nav-list {
+    display: flex;
+    flex-direction: row; /* Affiche les éléments en colonne */
+    flex-wrap: wrap;
+    align-items: center; /* Centre les éléments horizontalement */
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+.nav-list .contact{
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+
+/* Bannière */
+
+.banière {
+    position: relative;
+}
+
+.image26 {
     width: 100%;
-    height: 400px;
+    height: auto;
 }
+
+.texte_description {
+    position: absolute;
+    top: 80px;
+    bottom: 50px;
+    right: 50px;
+    left: 140px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.fabrique{
+    color: #F3F3F3;
+    margin-left: 40px;
+    margin-top: -15vh;
+    width: 80%;
+    height: 700px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ce0033;
+    opacity: 0.65;
+}
+.fabrique1,.fabrique2{
+    width: 85%;
+    margin-left: 30px;
+}
+
+.fabrique1{
+    border-right: none ;
+    border-bottom: #F3F3F3 solid 7px;
+}
+
+.fabrique h1{
+    font-size: 40px;
+}
+
+
+.button-passage {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.button-rond,
+.button-rectangle {
+    margin: 5px;
+}
+
+/* Petite histoire section */
+
+.petitehistoire {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.texte1,
+.video {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.video img {
+    max-width: 100%;
+    height: auto;
+}
+
+.h4 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Pédagogie section */
+
+.pedagogie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.video,
+.texte2 {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+#apprenant2 {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Voyage section */
+
+.voyage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.texte2,
+.video {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+#apprenant2 {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Équipe section */
+
+.equipe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+.headequipe{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.Formateur {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formateur{
+    background-color: white;
+    /* Ombre avec une couleur blanche */
+    box-shadow: 5px 5px 10px 0px white;
+    text-align: center;
+    border: white 1px solid;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+}
+.image{
+    width: 180px;
+    border-radius: 200px;
+
+}
+
+#form1{
+    margin-top: 15px;
+}
+
+
+
+/* Nos valeurs section */
+
+.valeurs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.div-un{
+    width: 70%;
+    text-align: center;
+    margin-left: 50px;
+}
+.div-deux{
+    width: 450px;
+    /* margin-right: 5px; */
+    margin-left: 5vh;
+}
+
+.div-un, .div-deux {
+    margin-bottom: 20px;
+}
+
+.valeur-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 
+.div-deux {
+    width: 10%;
+    margin-left: 0;
+} */
+
+/* Nos chiffres section */
+
+.numbers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url("Images/fabrique/Sans\ titre-1.png");
+    height: auto;
+}
+.headequipe1{
+    text-align: center;
+}
+.numbers p {
+    margin-top: 70px;
+    color: #FAFAFA;
+    font-size: 17px;
+}
+.valeurs h1{
+align-items: center;}
+
+/* dev web */
+
+.image1{
+    width: 180px;
+    height: 120px;
+}
+
+
+#devweb{
+    width: 100%;
+    margin-left: 0;
+}
+
+
+.partenaires1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 10px;
+    
+}
+
+.partenaires1 img{
+    width: 80px;
+    height: 100px;
+    margin-right: 80px;
+}
+#partenaires2{
+    margin-top: 20px;
+}
+
+/* .candidatures{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.partie1,.partie2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -50px;
+}
+
+/* témoignages */
+
+/* Styles pour la section "Recrutement" */
+.recrutement {
+    margin-top: 60px;
+    margin-left: 00px;
+    width: 300px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.recrutement .partie-1 {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.recrutement .partie-1 button{
+    margin-left: 90px;
+    color: #F3F3F3;
+}
+.recrutement .partie-2 button{
+    color: #F3F3F3;
+}
+.partie-1 img {
+    background-color: #8e1919;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 500px;
+}
+
+.offre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+    margin-right: 10px;
+    flex-direction: column;}
+
+.form1 {
+    margin-top: 30px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form2 {
+    margin-top: 30px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form1 input {
+    width: 300px;
+    height: 80px;
+    padding-left: 1;
+    margin-right: 20px;
+    border: solid #F3F3F3 1px;
+}
+
+.form2 input {
+    width: 300px;
+    height: 80px;
+    margin-right: 20px;
+    border: solid #F3F3F3 1px;
+}
+
+.iconify-icon {
+    color: #ce0033;
+    margin-left: 300px;
+}
+
+.partie-1 h1 {
+    font-size: 30px;
+    border-top: 3px solid #ce0033;
+    border-bottom: 3px solid #ce0033;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.partie-1 h3 {
+    display: flex;
+    justify-content: right;
+    font-size: 25px !important;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px !important;
+}
+.offre-info{
+    width: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.recrutement h1{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.offre-info h2 {
+    text-align: left;
+    border-bottom: 1px solid #ce0033;
+    font-size: 40px;
+    color: #ce0033;
+}
+
+.offre-info p {
+    font-size: 20px;
+}
+
+.offre-info h4 {
+    color: #ce0033;
+    font-size: 20px;
+}
+.recrutement .partie-1{
+    background: #f4efef;
+}
+.partie-1 button {
+    margin-top: 30px;
+    margin-left: 50%;
+    color: #F3F3F3 ;
+    font-size: 20px;
+    background-color: #ce0033;
+    border: 0.1px solid transparent;
+    border-radius: 35px;
+    width: 140px;
+    height: 50px;
+}
+
+.offre-details {
+    border-radius: 10%;
+    position: absolute;
+    background: #FAFAFA;
+    width: 25%;
+    height:45%;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 450px;
+    margin: right 0;
+    margin-left: 250px;
+}
+
+.offre-details iconify-icon {
+    width: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+    margin-top: -16px;
+    font-size: 16px;
+}
+
+.partie-2 h1 {
+
+    margin-top: 50px;
+    font-size: 30px;
+    color: #ce0033;
+}
+
+.partie-2 {
+    margin-left: 50px;
+}
+
+.fichier {
+    display: flex;
+    /* justify-content: right; */
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #ce0033;
+}
+
+.partie-2 p {
+    width: 300px;
+    height: 800px;
+    font-size: 18px;
+}
+
+.message textarea {
+    width: 300px;
+    height: 200px;
+    margin-left: 10px;
+    border: solid gray 3px;
+    margin-top: 20px;
+}
+
+.accord {
+    display: flex;
+    justify-content: left;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn {
+    display: flex;
+    margin-left: 20px;
+}
+/* Footer */
+
+footer {
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+.carte1 img{
+    width: 100%;
+}
+
+.Newsletter{
+    margin-left: 100Px;
+}
+.Newsletter input{
+    padding-right: 100px;
+}
+
+.carte2,
+.carte3,
+.carte4 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Carte 2 (Voir plus) */
+
+.carte2 a {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 2px;
+}
+
+/* Carte 3 (Coordonnées) */
+
+.carte3 p {
+    margin: 5px 0;
+}
+
+/* Carte 4 (Newsletter) */
+
+.carte4 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copy {
+    text-align: center;
+    padding-top: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+    }
+
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        /* Styles spécifiques pour les écrans jusqu'à 768 pixels de large */
+       /* Styles généraux */
+    
+    body {
+        font-family: 'Nunito Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    /* Section 1 - Barre de navigation */
+    
+    .section1 {
+        background-color: #ce0033;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    
+    
+    .nav-list {
+        display: flex;
+        flex-direction: row; /* Affiche les éléments en colonne */
+        flex-wrap: wrap;
+        align-items: center; /* Centre les éléments horizontalement */
+    }
+    
+    .logo img {
+        height: 40px;
+        width: auto;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    nav li {
+        margin-right: 20px;
+    }
+    
+    .nav-list .contact{
+        margin-left: 320px;
+        margin-bottom: 20px;
+    }
+    
+    /* Bannière */
+    
+    .banière {
+        position: relative;
+    }
+    
+    .image26 {
+        width: 100%;
+        height: auto;
+    }
+    
+    .texte_description {
+        position: absolute;
+        top: 280px;
+        bottom: -50px;
+        right: 50px;
+        left: 340px;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        font-size: 40px;
+        /* background: rgba(0, 0, 0, 0.5); */
+    }
+    
+    .fabrique{
+        color: #F3F3F3;
+        margin-left: 80px;
+        margin-top: -15vh;
+        width: 80%;
+        height: 450px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ce0033;
+        opacity: 0.65;
+    }
+    .fabrique1,.fabrique2{
+        width: 60%;
+        margin-left: 60px;
+    }
+    
+    .fabrique1{
+        border-right: none ;
+        border-bottom: #F3F3F3 solid 7px;
+    }
+    
+    .fabrique h1{
+        margin-left: 100px;
+        font-size: 40px;
+    }
+    
+    
+    .button-passage {
+        text-align: center;
+        padding-top: 150px;
+    }
+    
+    .button-rond,
+    .button-rectangle {
+        margin: 5px;
+    }
+    
+    /* Petite histoire section */
+    
+    .petitehistoire {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+    
+    .texte1,
+    .video {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+    
+    .video img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .h4 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Pédagogie section */
+    
+    .pedagogie {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+    
+    .video,
+    .texte2 {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+    
+    #apprenant2 {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Voyage section */
+    
+    .voyage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+    
+    .texte2,
+    .video {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+    
+    #apprenant2 {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Équipe section */
+    
+    .equipe {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+    .headequipe{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .Formateur {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formateur{
+        background-color: white;
+        /* Ombre avec une couleur blanche */
+        box-shadow: 5px 5px 10px 0px white;
+        text-align: center;
+        border: white 1px solid;
+        border-radius: 10px;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 5px;
+    }
+    .image{
+        width: 180px;
+        border-radius: 200px;
+    
+    }
+    
+    #form1{
+        margin-top: 15px;
+    }
+    
+    
+    
+    /* Nos valeurs section */
+    
+    .valeurs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+    }
+    
+    .div-un{
+        width: 70%;
+        text-align: center;
+        margin-left: 50px;
+    }
+    .div-deux{
+        width: 450px;
+        /* margin-right: 5px; */
+        margin-left: 5vh;
+    }
+    
+    .div-un, .div-deux {
+        margin-bottom: 20px;
+    }
+    
+    .valeur-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* 
+    .div-deux {
+        width: 10%;
+        margin-left: 0;
+    } */
+    
+    /* Nos chiffres section */
+    
+    .numbers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-image: url("Images/fabrique/Sans\ titre-1.png");
+        height: auto;
+    }
+    .headequipe1{
+        text-align: center;
+    }
+    .numbers p {
+        margin-top: 70px;
+        color: #FAFAFA;
+        font-size: 17px;
+    }
+    .valeurs h1{
+    align-items: center;}
+    
+    /* dev web */
+    
+    .image1{
+        width: 180px;
+        height: 120px;
+    }
+    
+    #temoignages p{
+        margin-left: 220px;
+    }
+
+    
+    #devweb{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    
+    .partenaires1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 80px;
+        margin-right: 10px;
+        
+    }
+    
+    .partenaires1 img{
+        width: 80px;
+        height: 100px;
+        margin-right: 80px;
+    }
+    #partenaires2{
+        margin-top: 20px;
+    }
+    
+    /* .candidatures{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } */
+    
+    .partie1,.partie2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 170px;
+    }
+    
+    /* témoignages */
+    
+    /* Styles pour la section "Recrutement" */
+    .recrutement {
+        margin-top: 60px;
+        margin-left: 00px;
+        width: 600px;
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    #H1{
+margin-left: 300px;    }
+
+    .recrutement .partie-1 {
+        width: 600px;
+        border-radius: 20px;
+        margin-left: 100px;
+    }
+    .recrutement .partie-1 button{
+        margin-left: 190px;
+        color: #F3F3F3;
+    }
+    .recrutement .partie-2 button{
+        color: #F3F3F3;
+    }
+    .partie-1 img {
+        background-color: #8e1919;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 700px;
+    }
+    
+    .offre {
+        display: flex;
+    }
+    
+    form {
+        margin-left: 100px;
+        display: grid;
+        margin-right: 100px;
+        grid-template-columns: 6fr;
+    }
+    
+    .form1 {
+        margin-top: 30px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .form2 {
+        margin-top: 30px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .form1 input {
+        width: 250px;
+        height: 80px;
+        padding-left: 1;
+        margin-right: 20px;
+        border: solid #F3F3F3 1px;
+    }
+    
+    .form2 input {
+        width: 250px;
+        height: 80px;
+        margin-right: 20px;
+        border: solid #F3F3F3 1px;
+    }
+    
+    .iconify-icon {
+        color: #ce0033;
+        margin-left: 300px;
+    }
+    
+    .partie-1 h1 {
+        font-size: 30px;
+        border-top: 3px solid #ce0033;
+        border-bottom: 3px solid #ce0033;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .partie-1 h3 {
+        display: flex;
+        justify-content: right;
+        font-size: 25px !important;
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 25px !important;
+    }
+    .offre-info{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .recrutement h1{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .offre-info h2 {
+        text-align: left;
+        border-bottom: 1px solid #ce0033;
+        font-size: 40px;
+        color: #ce0033;
+    }
+    
+    .offre-info p {
+        font-size: 20px;
+    }
+    
+    .offre-info h4 {
+        color: #ce0033;
+        font-size: 20px;
+    }
+    .recrutement .partie-1{
+        background: #f4efef;
+    }
+    .partie-1 button {
+        margin-top: 30px;
+        margin-left: 50%;
+        color: #F3F3F3 ;
+        font-size: 20px;
+        background-color: #ce0033;
+        border: 0.1px solid transparent;
+        border-radius: 35px;
+        width: 140px;
+        height: 50px;
+    }
+    
+    .offre-details {
+        border-radius: 10%;
+        position: absolute;
+        background: #FAFAFA;
+        width: 15%;
+        height:45%;
+        display: flex;
+        padding-top: 10px;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 190px;
+        margin: right 0;
+        margin-left: 450px;
+    }
+    
+    .offre-details iconify-icon {
+        width: 30px;
+        margin-left: 10px;
+        vertical-align: middle;
+        margin-top: -16px;
+        font-size: 16px;
+    }
+    
+    .partie-2 h1 {
+        margin-left: 200px;
+        margin-top: 50px;
+        font-size: 30px;
+        color: #ce0033;
+    }
+    
+    .partie-2 {
+        margin-left: 0px;
+    }
+    
+    .fichier {
+        display: flex;
+        justify-content: right;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        color: #ce0033;
+    }
+    
+    .partie-2 p {
+        margin-left: 100px;
+        width: 600px;
+        height: 500px;
+        font-size: 18px;
+    }
+    
+    .message textarea {
+        width: 540px;
+        height: 200px;
+        margin-left: 20px;
+        border: solid gray 3px;
+        margin-top: 20px;
+    }
+    
+    .accord {
+        display: flex;
+        justify-content: left;
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    
+    .btn {
+        display: flex;
+        margin-left: 20px;
+    }
+    
+    /* Footer */
+    
+    footer {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .carte1 img{
+        width: 100%;
+    }
+    
+    .Newsletter{
+        margin-left: 100Px;
+    }
+    .Newsletter input{
+        padding-right: 100px;
+    }
+    
+    .carte2,
+    .carte3,
+    .carte4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Carte 2 (Voir plus) */
+    
+    .carte2 a {
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 2px;
+    }
+    
+    /* Carte 3 (Coordonnées) */
+    
+    .carte3 p {
+        margin: 5px 0;
+    }
+    
+    /* Carte 4 (Newsletter) */
+    
+    .carte4 form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .copy {
+        text-align: center;
+        padding-top: 20px;
+        background-color: #000;
+        color: #fff;
+    }
+    
+        }
