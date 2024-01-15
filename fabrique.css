@@ -863,7 +863,7 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 767px) {
     /* Styles spécifiques pour les écrans jusqu'à 768 pixels de large */
    /* Styles généraux */
 
@@ -871,6 +871,7 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /* Section 1 - Barre de navigation */
@@ -888,7 +889,8 @@ body {
 
 .nav-list {
     display: flex;
-    flex-direction: column; /* Affiche les éléments en colonne */
+    flex-direction: row; /* Affiche les éléments en colonne */
+    flex-wrap: wrap;
     align-items: center; /* Centre les éléments horizontalement */
 }
 
@@ -909,6 +911,11 @@ nav li {
     margin-right: 20px;
 }
 
+.nav-list .contact{
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+
 /* Bannière */
 
 .banière {
@@ -922,20 +929,20 @@ nav li {
 
 .texte_description {
     position: absolute;
-    top: 20px;
+    top: 80px;
     bottom: 50px;
     right: 50px;
-    left: 50px;
+    left: 140px;
     padding: 20px;
     border-radius: 10px;
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     /* background: rgba(0, 0, 0, 0.5); */
 }
 
 .fabrique{
     color: #F3F3F3;
-    margin-left: 100px;
+    margin-left: 40px;
     margin-top: -15vh;
     width: 80%;
     height: 700px;
@@ -948,8 +955,8 @@ nav li {
     opacity: 0.65;
 }
 .fabrique1,.fabrique2{
-    width: 45%;
-    margin-left: 50px;
+    width: 85%;
+    margin-left: 30px;
 }
 
 .fabrique1{
@@ -1056,6 +1063,8 @@ nav li {
 }
 .Formateur {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .formateur{
@@ -1088,16 +1097,18 @@ nav li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px;
+    margin: 10px;
 }
 
-.div-un,.valeur{
-    width: 100%;
+.div-un{
+    width: 70%;
     text-align: center;
-    margin: 20px;
+    margin-left: 50px;
 }
 .div-deux{
-    margin-right: 10vh;
+    width: 450px;
+    /* margin-right: 5px; */
+    margin-left: 5vh;
 }
 
 .div-un, .div-deux {
@@ -1110,20 +1121,21 @@ nav li {
     justify-content: center;
 }
 
-/* .div-un,
+/* 
 .div-deux {
-    width: calc(50% - 20px);
-    margin: 10px;
+    width: 10%;
+    margin-left: 0;
 } */
 
 /* Nos chiffres section */
 
 .numbers{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     background-image: url("Images/fabrique/Sans\ titre-1.png");
-    height: 200px;
+    height: auto;
 }
 .headequipe1{
     text-align: center;
@@ -1152,6 +1164,8 @@ align-items: center;}
 
 .partenaires1{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-left: 80px;
@@ -1179,78 +1193,92 @@ align-items: center;}
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 150px;
+    margin-left: -50px;
 }
 
 /* témoignages */
 
 /* Styles pour la section "Recrutement" */
 .recrutement {
-    margin-left: 100px;
+    margin-top: 60px;
+    margin-left: 00px;
+    width: 300px;
+    margin-right: 50px;
     display: flex;
-    /* grid-template-columns: 6fr 6fr; */
+    flex-direction: column;
 }
-
+.recrutement .partie-1 {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.recrutement .partie-1 button{
+    margin-left: 90px;
+    color: #F3F3F3;
+}
+.recrutement .partie-2 button{
+    color: #F3F3F3;
+}
 .partie-1 img {
-    background-color: #cf3034;
+    background-color: #8e1919;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 700px;
+    width: 500px;
 }
 
 .offre {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 form {
-    display: grid;
-    margin-right: 100px;
-    grid-template-columns: 6fr;
-}
+    display: flex;
+    margin-right: 10px;
+    flex-direction: column;}
 
 .form1 {
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
 .form2 {
     margin-top: 30px;
-    margin-left: 20px;
+    margin-left: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
 .form1 input {
-    width: 250px;
+    width: 300px;
     height: 80px;
     padding-left: 1;
     margin-right: 20px;
-    border: solid gray 3px;
+    border: solid #F3F3F3 1px;
 }
 
 .form2 input {
-    width: 250px;
+    width: 300px;
     height: 80px;
     margin-right: 20px;
-    border: solid gray 3px;
+    border: solid #F3F3F3 1px;
 }
 
 .iconify-icon {
-    color: #cf3034;
+    color: #ce0033;
     margin-left: 300px;
-}
-
-.partie-1{
-    display: flex;
 }
 
 .partie-1 h1 {
     font-size: 30px;
-    border-top: 3px solid #cf3034;
-    border-bottom: 3px solid #cf3034;
+    border-top: 3px solid #ce0033;
+    border-bottom: 3px solid #ce0033;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -1265,11 +1293,20 @@ a {
     text-decoration: none;
     font-size: 25px !important;
 }
-
+.offre-info{
+    width: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.recrutement h1{
+    margin-left: 15px;
+    margin-right: 15px;
+}
 .offre-info h2 {
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    border-bottom: 1px solid #ce0033;
     font-size: 40px;
-    color: #cf3034;
+    color: #ce0033;
 }
 
 .offre-info p {
@@ -1277,16 +1314,18 @@ a {
 }
 
 .offre-info h4 {
-    color: #cf3034;
+    color: #ce0033;
     font-size: 20px;
 }
-
+.recrutement .partie-1{
+    background: #f4efef;
+}
 .partie-1 button {
     margin-top: 30px;
     margin-left: 50%;
-    color: var(--blanc);
+    color: #F3F3F3 ;
     font-size: 20px;
-    background-color: #cf3034;
+    background-color: #ce0033;
     border: 0.1px solid transparent;
     border-radius: 35px;
     width: 140px;
@@ -1294,18 +1333,33 @@ a {
 }
 
 .offre-details {
-    margin-top: 130px;
-    margin-left: 60px;
+    border-radius: 10%;
+    position: absolute;
+    background: #FAFAFA;
+    width: 25%;
+    height:45%;
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 450px;
+    margin: right 0;
+    margin-left: 250px;
 }
 
-.offre-details p {
-    font-size: 20px;
+.offre-details iconify-icon {
+    width: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+    margin-top: -16px;
+    font-size: 16px;
 }
 
 .partie-2 h1 {
+
     margin-top: 50px;
     font-size: 30px;
-    color: #cf3034;
+    color: #ce0033;
 }
 
 .partie-2 {
@@ -1314,22 +1368,23 @@ a {
 
 .fichier {
     display: flex;
-    justify-content: right;
+    /* justify-content: right; */
+    margin-left: 20px;
     margin-top: 10px;
     margin-bottom: 0px;
-    color: #cf3034;
+    color: #ce0033;
 }
 
 .partie-2 p {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 800px;
     font-size: 18px;
 }
 
 .message textarea {
-    width: 540px;
+    width: 300px;
     height: 200px;
-    margin-left: 20px;
+    margin-left: 10px;
     border: solid gray 3px;
     margin-top: 20px;
 }
@@ -1348,17 +1403,6 @@ a {
     display: flex;
     margin-left: 20px;
 }
-
-.btn input {
-    width: 200px;
-    height: 50px;
-    border: 0.1px solid transparent;
-    border-radius: 35px;
-    color: #ffffff;
-    font-size: 18px;
-    background-color: #cf3034;
-}
-
 /* Footer */
 
 footer {
@@ -1415,3 +1459,605 @@ footer {
 }
 
     }
+
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        /* Styles spécifiques pour les écrans jusqu'à 768 pixels de large */
+       /* Styles généraux */
+    
+    body {
+        font-family: 'Nunito Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    
+    /* Section 1 - Barre de navigation */
+    
+    .section1 {
+        background-color: #ce0033;
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    
+    
+    .nav-list {
+        display: flex;
+        flex-direction: row; /* Affiche les éléments en colonne */
+        flex-wrap: wrap;
+        align-items: center; /* Centre les éléments horizontalement */
+    }
+    
+    .logo img {
+        height: 40px;
+        width: auto;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    nav li {
+        margin-right: 20px;
+    }
+    
+    .nav-list .contact{
+        margin-left: 320px;
+        margin-bottom: 20px;
+    }
+    
+    /* Bannière */
+    
+    .banière {
+        position: relative;
+    }
+    
+    .image26 {
+        width: 100%;
+        height: auto;
+    }
+    
+    .texte_description {
+        position: absolute;
+        top: 280px;
+        bottom: -50px;
+        right: 50px;
+        left: 340px;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        font-size: 40px;
+        /* background: rgba(0, 0, 0, 0.5); */
+    }
+    
+    .fabrique{
+        color: #F3F3F3;
+        margin-left: 80px;
+        margin-top: -15vh;
+        width: 80%;
+        height: 450px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #ce0033;
+        opacity: 0.65;
+    }
+    .fabrique1,.fabrique2{
+        width: 60%;
+        margin-left: 60px;
+    }
+    
+    .fabrique1{
+        border-right: none ;
+        border-bottom: #F3F3F3 solid 7px;
+    }
+    
+    .fabrique h1{
+        margin-left: 100px;
+        font-size: 40px;
+    }
+    
+    
+    .button-passage {
+        text-align: center;
+        padding-top: 150px;
+    }
+    
+    .button-rond,
+    .button-rectangle {
+        margin: 5px;
+    }
+    
+    /* Petite histoire section */
+    
+    .petitehistoire {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+    
+    .texte1,
+    .video {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+    
+    .video img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .h4 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* Pédagogie section */
+    
+    .pedagogie {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+    
+    .video,
+    .texte2 {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+    
+    #apprenant2 {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Voyage section */
+    
+    .voyage {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+    
+    .texte2,
+    .video {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+    
+    #apprenant2 {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Équipe section */
+    
+    .equipe {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px;
+    }
+    .headequipe{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .Formateur {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formateur{
+        background-color: white;
+        /* Ombre avec une couleur blanche */
+        box-shadow: 5px 5px 10px 0px white;
+        text-align: center;
+        border: white 1px solid;
+        border-radius: 10px;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 5px;
+    }
+    .image{
+        width: 180px;
+        border-radius: 200px;
+    
+    }
+    
+    #form1{
+        margin-top: 15px;
+    }
+    
+    
+    
+    /* Nos valeurs section */
+    
+    .valeurs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+    }
+    
+    .div-un{
+        width: 70%;
+        text-align: center;
+        margin-left: 50px;
+    }
+    .div-deux{
+        width: 450px;
+        /* margin-right: 5px; */
+        margin-left: 5vh;
+    }
+    
+    .div-un, .div-deux {
+        margin-bottom: 20px;
+    }
+    
+    .valeur-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* 
+    .div-deux {
+        width: 10%;
+        margin-left: 0;
+    } */
+    
+    /* Nos chiffres section */
+    
+    .numbers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-image: url("Images/fabrique/Sans\ titre-1.png");
+        height: auto;
+    }
+    .headequipe1{
+        text-align: center;
+    }
+    .numbers p {
+        margin-top: 70px;
+        color: #FAFAFA;
+        font-size: 17px;
+    }
+    .valeurs h1{
+    align-items: center;}
+    
+    /* dev web */
+    
+    .image1{
+        width: 180px;
+        height: 120px;
+    }
+    
+    #temoignages p{
+        margin-left: 220px;
+    }
+
+    
+    #devweb{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    
+    .partenaires1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-left: 80px;
+        margin-right: 10px;
+        
+    }
+    
+    .partenaires1 img{
+        width: 80px;
+        height: 100px;
+        margin-right: 80px;
+    }
+    #partenaires2{
+        margin-top: 20px;
+    }
+    
+    /* .candidatures{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } */
+    
+    .partie1,.partie2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 170px;
+    }
+    
+    /* témoignages */
+    
+    /* Styles pour la section "Recrutement" */
+    .recrutement {
+        margin-top: 60px;
+        margin-left: 00px;
+        width: 600px;
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    #H1{
+margin-left: 300px;    }
+
+    .recrutement .partie-1 {
+        width: 600px;
+        border-radius: 20px;
+        margin-left: 100px;
+    }
+    .recrutement .partie-1 button{
+        margin-left: 190px;
+        color: #F3F3F3;
+    }
+    .recrutement .partie-2 button{
+        color: #F3F3F3;
+    }
+    .partie-1 img {
+        background-color: #8e1919;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 700px;
+    }
+    
+    .offre {
+        display: flex;
+    }
+    
+    form {
+        margin-left: 100px;
+        display: grid;
+        margin-right: 100px;
+        grid-template-columns: 6fr;
+    }
+    
+    .form1 {
+        margin-top: 30px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .form2 {
+        margin-top: 30px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .form1 input {
+        width: 250px;
+        height: 80px;
+        padding-left: 1;
+        margin-right: 20px;
+        border: solid #F3F3F3 1px;
+    }
+    
+    .form2 input {
+        width: 250px;
+        height: 80px;
+        margin-right: 20px;
+        border: solid #F3F3F3 1px;
+    }
+    
+    .iconify-icon {
+        color: #ce0033;
+        margin-left: 300px;
+    }
+    
+    .partie-1 h1 {
+        font-size: 30px;
+        border-top: 3px solid #ce0033;
+        border-bottom: 3px solid #ce0033;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .partie-1 h3 {
+        display: flex;
+        justify-content: right;
+        font-size: 25px !important;
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 25px !important;
+    }
+    .offre-info{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .recrutement h1{
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .offre-info h2 {
+        text-align: left;
+        border-bottom: 1px solid #ce0033;
+        font-size: 40px;
+        color: #ce0033;
+    }
+    
+    .offre-info p {
+        font-size: 20px;
+    }
+    
+    .offre-info h4 {
+        color: #ce0033;
+        font-size: 20px;
+    }
+    .recrutement .partie-1{
+        background: #f4efef;
+    }
+    .partie-1 button {
+        margin-top: 30px;
+        margin-left: 50%;
+        color: #F3F3F3 ;
+        font-size: 20px;
+        background-color: #ce0033;
+        border: 0.1px solid transparent;
+        border-radius: 35px;
+        width: 140px;
+        height: 50px;
+    }
+    
+    .offre-details {
+        border-radius: 10%;
+        position: absolute;
+        background: #FAFAFA;
+        width: 15%;
+        height:45%;
+        display: flex;
+        padding-top: 10px;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 190px;
+        margin: right 0;
+        margin-left: 450px;
+    }
+    
+    .offre-details iconify-icon {
+        width: 30px;
+        margin-left: 10px;
+        vertical-align: middle;
+        margin-top: -16px;
+        font-size: 16px;
+    }
+    
+    .partie-2 h1 {
+        margin-left: 200px;
+        margin-top: 50px;
+        font-size: 30px;
+        color: #ce0033;
+    }
+    
+    .partie-2 {
+        margin-left: 0px;
+    }
+    
+    .fichier {
+        display: flex;
+        justify-content: right;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        color: #ce0033;
+    }
+    
+    .partie-2 p {
+        margin-left: 100px;
+        width: 600px;
+        height: 500px;
+        font-size: 18px;
+    }
+    
+    .message textarea {
+        width: 540px;
+        height: 200px;
+        margin-left: 20px;
+        border: solid gray 3px;
+        margin-top: 20px;
+    }
+    
+    .accord {
+        display: flex;
+        justify-content: left;
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    
+    .btn {
+        display: flex;
+        margin-left: 20px;
+    }
+    
+    /* Footer */
+    
+    footer {
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .carte1 img{
+        width: 100%;
+    }
+    
+    .Newsletter{
+        margin-left: 100Px;
+    }
+    .Newsletter input{
+        padding-right: 100px;
+    }
+    
+    .carte2,
+    .carte3,
+    .carte4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Carte 2 (Voir plus) */
+    
+    .carte2 a {
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 2px;
+    }
+    
+    /* Carte 3 (Coordonnées) */
+    
+    .carte3 p {
+        margin: 5px 0;
+    }
+    
+    /* Carte 4 (Newsletter) */
+    
+    .carte4 form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .copy {
+        text-align: center;
+        padding-top: 20px;
+        background-color: #000;
+        color: #fff;
+    }
+    
+        }
